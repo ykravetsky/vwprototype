@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/content/vwprototype"/>
+    <!--filter root="/content/dam/vw-media"/>
+    <filter root="/home/groups/..."/>
+    <filter root="/home/users/..."/-->
+</workspaceFilter>

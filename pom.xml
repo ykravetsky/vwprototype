@@ -259,7 +259,8 @@
         </profile>
     </profiles>
   <modules>
-    <module>bundle</module>
-    <module>content</module>
+    <module>vwprototype-bundle</module>
+    <module>vwprototype-view</module>
+    <module>vwprototype-sample-content</module>
   </modules>
 </project>
