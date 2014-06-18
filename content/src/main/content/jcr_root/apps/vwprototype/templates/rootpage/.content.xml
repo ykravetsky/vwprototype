@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Root template for VW Prototype"
+    jcr:primaryType="cq:Template"
+    jcr:title="VW Prototype Root Template"
+    allowedPaths="[/content]"
+    allowedChildren="[/apps/vwprototype/templates/languagenode"
+    ranking="{Long}100">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="vwprototype/components/page/rootpage"/>
+</jcr:root>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/libs/wcm/core/templates/designpage"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="VW Prototype"
+        sling:resourceType="wcm/core/components/designer">
+        <homepage jcr:primaryType="nt:unstructured">
+            <leftpar
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:VW Prototype">
+                <section jcr:primaryType="nt:unstructured"/>
+            </leftpar>
+            <rightpar
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:VW Prototype">
+                <section jcr:primaryType="nt:unstructured"/>
+            </rightpar>
+        </homepage>
+    </jcr:content>
+    <vwprototype.css/>
+</jcr:root>

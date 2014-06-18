@@ -1,0 +1,38 @@
+/* CSS FOR THE VW PROTOTYPE PROJECT */
+body, html{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: grey;
+}
+
+.inner-div{
+    width: 961px;
+    padding-bottom: 30px;
+    margin: 0 auto -43px auto;
+}
+
+.clear-div{
+    clear:both;
+}
+
+p{
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    max-width: 570px;
+    color: #454545;
+    text-align: left;
+    line-height: 30px;
+}
+
+#content-left{
+    width: 592px;
+    margin-left: 20px;
+    float: left;
+}
+
+#content-right{
+    width: 329px;
+    margin-left: 10px;
+    float: left;
+}
