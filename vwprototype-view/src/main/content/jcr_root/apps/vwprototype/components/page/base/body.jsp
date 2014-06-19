@@ -1,6 +1,6 @@
 <%@include file="/apps/vwprototype/global.jsp" %>
 <%@page session="false" %>
-<body>
+<body class="uk">
     <div>
         <cq:include script="header.jsp"/>
         <cq:include script="content.jsp"/>

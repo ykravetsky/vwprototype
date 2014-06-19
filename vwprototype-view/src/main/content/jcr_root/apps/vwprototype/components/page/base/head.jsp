@@ -21,6 +21,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"<%=xs%>>
     <meta name="keywords" content="<%= xssAPI.encodeForHTMLAttr(WCMUtils.getKeywords(currentPage, false)) %>"<%=xs%>>
     <meta name="description" content="<%= xssAPI.encodeForHTMLAttr(properties.get("jcr:description", "")) %>"<%=xs%>>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <cq:include script="headlibs.jsp"/>
     <cq:include script="/libs/wcm/core/components/init/init.jsp"/>
     <link rel="stylesheet" type="text/css" href="/etc/designs/vwprototype/vwprototype.css" />
