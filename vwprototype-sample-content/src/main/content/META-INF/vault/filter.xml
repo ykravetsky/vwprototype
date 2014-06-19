@@ -2,7 +2,5 @@
 <workspaceFilter version="1.0">
     <filter root="/content/vwprototype"/>
     <filter root="/content/campaigns/volkswagen"/>
-    <!--filter root="/content/dam/vw-media"/>
-    <filter root="/home/groups/..."/>
-    <filter root="/home/users/..."/-->
+    <filter root="/content/dam/vwprototype"/>
 </workspaceFilter>
