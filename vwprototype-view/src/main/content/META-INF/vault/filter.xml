@@ -2,4 +2,6 @@
 <workspaceFilter version="1.0">
     <filter root="/apps/vwprototype"/>
     <filter root="/etc/designs/vwprototype"/>
+    <filter root="/apps/vwprototype"/>
+    <filter root="/libs/granite/core/content/login/clientlib/resources/bg/default/1280x768.jpg"/>s
 </workspaceFilter>

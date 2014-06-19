@@ -8,8 +8,18 @@
         jcr:primaryType="cq:PageContent"
         jcr:title="Home"
         sling:resourceType="vwprototype/components/page/homepage">
-        <leftpar
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="foundation/components/parsys"/>
+        <centralpar
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+            <teaser
+                    jcr:created="{Date}2014-06-19T11:26:31.008+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2014-06-19T11:27:12.816+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/personalization/components/teaser"
+                    location="homepage_hero"
+                    strategyPath="cq/personalization/clientlib/source/strategies/list/random.js"/>
+        </centralpar>
     </jcr:content>
 </jcr:root>

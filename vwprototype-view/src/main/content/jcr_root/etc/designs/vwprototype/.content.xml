@@ -7,18 +7,12 @@
         jcr:title="VW Prototype"
         sling:resourceType="wcm/core/components/designer">
         <homepage jcr:primaryType="nt:unstructured">
-            <leftpar
+            <centralpar
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/parsys"
-                components="group:VW Prototype">
+                components="group:VW Prototype,/libs/cq/personalization/components/target,/libs/cq/personalization/components/teaser">
                 <section jcr:primaryType="nt:unstructured"/>
-            </leftpar>
-            <rightpar
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="foundation/components/parsys"
-                components="group:VW Prototype">
-                <section jcr:primaryType="nt:unstructured"/>
-            </rightpar>
+            </centralpar>
         </homepage>
     </jcr:content>
     <vwprototype.css/>

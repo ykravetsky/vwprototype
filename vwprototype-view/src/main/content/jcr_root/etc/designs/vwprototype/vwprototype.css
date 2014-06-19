@@ -26,13 +26,19 @@ p{
 }
 
 #content-left{
-    width: 592px;
+    width: 329px;
     margin-left: 20px;
     float: left;
 }
 
 #content-right{
-    width: 329px;
+    width: 592px;
     margin-left: 10px;
+    float: left;
+}
+
+#content-central{
+    width: 921px;
+    margin-left: 5px;
     float: left;
 }
