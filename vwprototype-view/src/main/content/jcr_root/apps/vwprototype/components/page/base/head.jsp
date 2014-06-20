@@ -25,6 +25,9 @@
     <cq:include script="headlibs.jsp"/>
     <cq:include script="/libs/wcm/core/components/init/init.jsp"/>
     <link rel="stylesheet" type="text/css" href="/etc/designs/vwprototype/vwprototype.css" />
+
+    <script src="/etc/designs/vwprototype/assets/js/vendor/modernizr-2.6.2.min.js"></script>
+
     <cq:include script="stats.jsp"/>
     <% if (favIcon != null) { %>
     <link rel="icon" type="image/vnd.microsoft.icon" href="<%= xssAPI.getValidHref(favIcon) %>"<%=xs%>>

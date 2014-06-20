@@ -8396,6 +8396,11 @@ button.close {
     margin: 0 auto;
     z-index: 1;
 }
+
+.pane .placeholder-image {
+    display: none;
+}
+
 /* line 15, ../../sass/components/_pane.scss */
 .pane .hotspot {
     background: red;
@@ -8509,6 +8514,89 @@ button.close {
     right: -227px;
 }
 
+/* line 1, ../../sass/components/_sidebar.scss */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+}
+/* line 8, ../../sass/components/_sidebar.scss */
+.sidebar .head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 160px;
+    background: white;
+    z-index: 2;
+    background: url("assets/img/sidebar-head.jpg") no-repeat;
+}
+/* line 19, ../../sass/components/_sidebar.scss */
+.sidebar .submenu {
+    -webkit-transition: 0.25s left ease-in-out;
+    -moz-transition: 0.25s left ease-in-out;
+    -o-transition: 0.25s left ease-in-out;
+    transition: 0.25s left ease-in-out;
+    width: 140px;
+    left: -140px;
+    position: absolute;
+    padding-top: 161px;
+    top: 0;
+    bottom: 0;
+    background: white;
+    margin: 0;
+    z-index: 1;
+    background: url("assets/img/sidebar-visible-menu.jpg") white no-repeat;
+}
+/* line 32, ../../sass/components/_sidebar.scss */
+.sidebar .submenu .hotspot {
+    position: absolute;
+    top: 202px;
+    left: 0;
+    width: 140px;
+    height: 80px;
+    display: block;
+}
+/* line 42, ../../sass/components/_sidebar.scss */
+.sidebar .child-menu {
+    -webkit-transition: 0.25s left ease-in-out;
+    -moz-transition: 0.25s left ease-in-out;
+    -o-transition: 0.25s left ease-in-out;
+    transition: 0.25s left ease-in-out;
+    width: 190px;
+    left: -190px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: white;
+    margin: 0;
+    z-index: 1;
+    background-color: #00b1eb;
+    background-position: -140px 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* line 64, ../../sass/components/_sidebar.scss */
+.menu-visible .sidebar .head {
+    background-image: url("assets/img/sidebar-visible-menu.jpg");
+}
+
+/* line 71, ../../sass/components/_sidebar.scss */
+.menu-visible .sidebar .submenu {
+    left: 0;
+}
+/* line 74, ../../sass/components/_sidebar.scss */
+.menu-visible .sidebar .submenu.active {
+    background-image: url("assets/img/sidebar-selected-mouseover.jpg");
+}
+/* line 79, ../../sass/components/_sidebar.scss */
+.menu-visible .sidebar .submenu.active + .child-menu {
+    left: 140px;
+}
+
 /* line 1, ../../sass/views/_livecms.scss */
 #livecms {
     position: relative;
@@ -8583,6 +8671,7 @@ button.close {
     right: 0;
     max-width: 1336px;
     min-width: 320px;
+    min-height: 3500px;
 }
 /* line 12, ../../sass/views/_viewport.scss */
 #site-wrapper #viewport {
@@ -8777,4 +8866,17 @@ button.close {
         background-size: 320px 180px;
         background-image: url("assets/img/panes/home_china_mobile_portrait_06.jpg");
     }
+}
+/* line 2, ../../sass/views/_ab_testing.scss */
+.uk.cms #home-01 {
+    background: none !important;
+    height: auto !important;
+}
+/* line 6, ../../sass/views/_ab_testing.scss */
+.uk.cms #home-01 img {
+    width: 100%;
+}
+/* line 10, ../../sass/views/_ab_testing.scss */
+.uk.cms #home-01 .placeholder-image {
+    display: block !important;
 }

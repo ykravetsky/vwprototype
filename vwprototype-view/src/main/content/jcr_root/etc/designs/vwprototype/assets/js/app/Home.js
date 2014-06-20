@@ -22,6 +22,14 @@ define([
             $('#site-wrapper').toggleClass('menu-visible');
         });
 
+        $('.sidebar .head').on('click',function(){
+            $('#site-wrapper').toggleClass('menu-visible');
+        });
+
+        $('.submenu .hotspot').on('click',function(){
+            $('.submenu').toggleClass('active');
+        });
+
         $('.close').on('click',function(){
             $(this).parent().fadeOut();
         });
