@@ -1,37 +1,45 @@
-<%@page session="false"%><%--
-  Default head script.
+<%@page session="false"%>
+<%@ include file="/libs/foundation/global.jsp" %><%
+%><%@ page contentType="text/html; charset=utf-8" import="
+    com.day.cq.commons.Externalizer,
+    info.geometrixx.commons.util.GeoHelper"
+%><%
 
-  Draws the HTML head with some default content:
-  - includes the WCML init script
-  - includes the head libs script
-  - includes the favicons
-  - sets the HTML title
-  - sets some meta data
+    final Externalizer externalizer = resourceResolver.adaptTo(Externalizer.class);
 
-  ==============================================================================
+    // On the homepage, let's exceptionally take the page title, instead of the normal title,
+    // because we use the title to nicely display the language in the site admin interface.
+    final String title         = GeoHelper.getPageTitle(currentPage);
+    final String canonicalURL  = externalizer.absoluteLink(slingRequest, "http", currentPage.getPath()) + ".html";
+    final String favicon       = currentDesign.getPath() + "/favicon.ico";
+    final boolean hasFavIcon   = (resourceResolver.getResource(favicon) != null);
+    final String keywords      = WCMUtils.getKeywords(currentPage);
+    final String description   = currentPage.getDescription();
 
---%><%@include file="/apps/vwprototype/global.jsp" %><%
-%><%@ page import="com.day.cq.commons.Doctype" %><%
-    String xs = Doctype.isXHTML(request) ? "/" : "";
-    String favIcon = currentDesign.getPath() + "/favicon.ico";
-    if (resourceResolver.getResource(favIcon) == null) {
-        favIcon = null;
-    }
 %><head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"<%=xs%>>
-    <meta name="keywords" content="<%= xssAPI.encodeForHTMLAttr(WCMUtils.getKeywords(currentPage, false)) %>"<%=xs%>>
-    <meta name="description" content="<%= xssAPI.encodeForHTMLAttr(properties.get("jcr:description", "")) %>"<%=xs%>>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <cq:include script="headlibs.jsp"/>
-    <cq:include script="/libs/wcm/core/components/init/init.jsp"/>
+    <title><%= xssAPI.encodeForHTML(title) %></title>
+    <link rel="canonical" href="<%= xssAPI.getValidHref(canonicalURL) %>" />
     <link rel="stylesheet" type="text/css" href="/etc/designs/vwprototype/vwprototype.css" />
 
     <script src="/etc/designs/vwprototype/assets/js/vendor/modernizr-2.6.2.min.js"></script>
 
-    <cq:include script="stats.jsp"/>
-    <% if (favIcon != null) { %>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="<%= xssAPI.getValidHref(favIcon) %>"<%=xs%>>
-    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<%= xssAPI.getValidHref(favIcon) %>"<%=xs%>>
-    <% } %>
-    <title><%= currentPage.getTitle() == null ? xssAPI.encodeForHTML(currentPage.getName()) : xssAPI.encodeForHTML(currentPage.getTitle()) %></title>
+    <% if (hasFavIcon) { %><link rel="shortcut icon" href="<%= xssAPI.getValidHref(favicon) %>" /><% } %>
+    <% if (GeoHelper.notEmpty(keywords)) { %><meta name="keywords" content="<%= xssAPI.encodeForHTMLAttr(keywords) %>" /><% } %>
+    <% if (GeoHelper.notEmpty(description)) { %><meta name="description" content="<%= xssAPI.encodeForHTMLAttr(description) %>" /><% } %>
+    <script>
+        <%-- Adds a js class to the <html> element to create custom CSS rules if JS is enabled/disabled --%>
+        document.documentElement.className+=' js';
+        <%-- Makes HTML5 elements listen to CSS styling in IE6-8 (aka HTML5 Shiv) - this is using the IE conditional comments feature --%>
+        /*@cc_on(function(){var e=['abbr','article','aside','audio','canvas','details','figcaption','figure','footer','header','hgroup','mark','meter','nav','output','progress','section','summary','time','video'];for (var i = e.length; i-- > 0;) document.createElement(e[i]);})();@*/
+    </script>
+    <cq:include script="/libs/wcm/core/components/init/init.jsp"/>
+    <cq:include script="/libs/foundation/components/page/stats.jsp"/>
+    <cq:include script="/libs/cq/cloudserviceconfigs/components/servicelibs/servicelibs.jsp"/>
+    <cq:include script="/libs/wcm/core/browsermap/browsermap.jsp" />
+    <cq:include path="config" resourceType="cq/personalization/components/clientcontext_optimized/config"/>
+    <sling:include path="contexthub" resourceType="granite/contexthub/components/contexthub"/>
+
+
 </head>

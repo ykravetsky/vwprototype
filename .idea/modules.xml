@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/vwprototype.iml" filepath="$PROJECT_DIR$/vwprototype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vwprototype-bundle/vwprototype-bundle.iml" filepath="$PROJECT_DIR$/vwprototype-bundle/vwprototype-bundle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vwprototype-sample-content/vwprototype-sample-content.iml" filepath="$PROJECT_DIR$/vwprototype-sample-content/vwprototype-sample-content.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vwprototype-view/vwprototype-view.iml" filepath="$PROJECT_DIR$/vwprototype-view/vwprototype-view.iml" />
+    </modules>
+  </component>
+</project>
+
