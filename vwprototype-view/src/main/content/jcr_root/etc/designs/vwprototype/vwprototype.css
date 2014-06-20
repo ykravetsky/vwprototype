@@ -1,5 +1,5 @@
 /* Import Essentials */
-/* line 17, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
     line-height: 1;
 }
 
-/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
     list-style: none;
 }
 
-/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
     text-align: left;
     font-weight: normal;
     vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
     quotes: none;
 }
-/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none;
 }
 
-/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
     border: none;
 }
 
-/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
     display: block;
 }
@@ -8323,6 +8323,11 @@ button.close {
 /*# sourceMappingURL=bootstrap.css.map */
 /* Import variables */
 /* Import base styles */
+/* line 1, ../../sass/_base.scss */
+* {
+    -webkit-overflow-scrolling: touch;
+}
+
 /* Import Fonts */
 @font-face {
     font-family: "VWHeadlineOT-Black";
@@ -8389,6 +8394,10 @@ button.close {
     position: relative;
 }
 /* line 7, ../../sass/components/_pane.scss */
+.pane .placeholder-image {
+    display: none;
+}
+/* line 11, ../../sass/components/_pane.scss */
 .pane .content-wrapper {
     max-width: 1020px;
     position: relative;
@@ -8396,18 +8405,13 @@ button.close {
     margin: 0 auto;
     z-index: 1;
 }
-
-.pane .placeholder-image {
-    display: none;
-}
-
-/* line 15, ../../sass/components/_pane.scss */
+/* line 19, ../../sass/components/_pane.scss */
 .pane .hotspot {
     background: red;
     opacity: 1;
     position: absolute;
 }
-/* line 21, ../../sass/components/_pane.scss */
+/* line 25, ../../sass/components/_pane.scss */
 .pane .close {
     height: 30px;
     width: 30px;
@@ -8423,7 +8427,7 @@ button.close {
     -o-transition: 0.15s ease-in-out;
     transition: 0.15s ease-in-out;
 }
-/* line 33, ../../sass/components/_pane.scss */
+/* line 37, ../../sass/components/_pane.scss */
 .pane .close:hover {
     opacity: 1;
 }
@@ -8532,39 +8536,65 @@ button.close {
     background: white;
     z-index: 2;
     background: url("assets/img/sidebar-head.jpg") no-repeat;
+    cursor: pointer;
 }
 /* line 19, ../../sass/components/_sidebar.scss */
-.sidebar .submenu {
-    -webkit-transition: 0.25s left ease-in-out;
-    -moz-transition: 0.25s left ease-in-out;
-    -o-transition: 0.25s left ease-in-out;
-    transition: 0.25s left ease-in-out;
-    width: 140px;
-    left: -140px;
+.sidebar .head .logo {
     position: absolute;
-    padding-top: 161px;
+    width: 140px;
+    height: 121px;
+    display: block;
+    left: 0;
     top: 0;
-    bottom: 0;
+}
+/* line 28, ../../sass/components/_sidebar.scss */
+.sidebar .head .menu-trigger {
+    position: absolute;
+    width: 140px;
+    height: 39px;
+    display: block;
+    left: 0;
+    top: 121px;
+    text-indent: -9999px;
+}
+/* line 39, ../../sass/components/_sidebar.scss */
+.sidebar .submenu {
+    -webkit-transition: 0.25s top ease-in-out;
+    -moz-transition: 0.25s top ease-in-out;
+    -o-transition: 0.25s top ease-in-out;
+    transition: 0.25s top ease-in-out;
+    width: 140px;
+    left: 0;
+    position: absolute;
+    top: -100%;
+    height: 100%;
     background: white;
     margin: 0;
     z-index: 1;
-    background: url("assets/img/sidebar-visible-menu.jpg") white no-repeat;
+    overflow: auto;
 }
-/* line 32, ../../sass/components/_sidebar.scss */
+/* line 51, ../../sass/components/_sidebar.scss */
+.sidebar .submenu .scroll-box {
+    width: 140px;
+    height: 975px;
+    background-image: url("assets/img/nav.jpg");
+    background-position: -140px 0;
+}
+/* line 58, ../../sass/components/_sidebar.scss */
 .sidebar .submenu .hotspot {
     position: absolute;
-    top: 202px;
+    top: 0;
     left: 0;
     width: 140px;
     height: 80px;
     display: block;
 }
-/* line 42, ../../sass/components/_sidebar.scss */
+/* line 68, ../../sass/components/_sidebar.scss */
 .sidebar .child-menu {
-    -webkit-transition: 0.25s left ease-in-out;
-    -moz-transition: 0.25s left ease-in-out;
-    -o-transition: 0.25s left ease-in-out;
-    transition: 0.25s left ease-in-out;
+    -webkit-transition: 0.5s left ease-in-out;
+    -moz-transition: 0.5s left ease-in-out;
+    -o-transition: 0.5s left ease-in-out;
+    transition: 0.5s left ease-in-out;
     width: 190px;
     left: -190px;
     position: absolute;
@@ -8576,23 +8606,32 @@ button.close {
     background-color: #00b1eb;
     background-position: -140px 0;
     z-index: -1;
-    overflow: hidden;
+    overflow: auto;
+}
+/* line 83, ../../sass/components/_sidebar.scss */
+.sidebar .child-menu .scroll-box {
+    width: 190px;
+    height: 1536px;
+    background-image: url("assets/img/sidebar-selected.jpg");
+    background-position: -140px 0;
 }
 
-/* line 64, ../../sass/components/_sidebar.scss */
+/* line 93, ../../sass/components/_sidebar.scss */
 .menu-visible .sidebar .head {
     background-image: url("assets/img/sidebar-visible-menu.jpg");
+    height: 202px;
 }
 
-/* line 71, ../../sass/components/_sidebar.scss */
+/* line 101, ../../sass/components/_sidebar.scss */
 .menu-visible .sidebar .submenu {
-    left: 0;
+    top: 202px;
+    bottom: 0;
 }
-/* line 74, ../../sass/components/_sidebar.scss */
-.menu-visible .sidebar .submenu.active {
-    background-image: url("assets/img/sidebar-selected-mouseover.jpg");
+/* line 105, ../../sass/components/_sidebar.scss */
+.menu-visible .sidebar .submenu.active .scroll-box {
+    background-image: url("assets/img/nav-selected.jpg");
 }
-/* line 79, ../../sass/components/_sidebar.scss */
+/* line 110, ../../sass/components/_sidebar.scss */
 .menu-visible .sidebar .submenu.active + .child-menu {
     left: 140px;
 }
@@ -8683,10 +8722,6 @@ button.close {
     min-width: 320px;
     max-width: 1163px;
     overflow: auto;
-    -webkit-transition: 0.15s ease-in-out;
-    -moz-transition: 0.15s ease-in-out;
-    -o-transition: 0.15s ease-in-out;
-    transition: 0.15s ease-in-out;
 }
 @media (max-width: 320px) {
     /* line 12, ../../sass/views/_viewport.scss */
@@ -8697,29 +8732,41 @@ button.close {
         top: 50px;
     }
 }
-/* line 31, ../../sass/views/_viewport.scss */
+/* line 30, ../../sass/views/_viewport.scss */
 #site-wrapper.align-left #viewport {
     padding-left: 173px;
 }
-/* line 35, ../../sass/views/_viewport.scss */
+/* line 34, ../../sass/views/_viewport.scss */
 #site-wrapper.align-right #viewport {
     padding-right: 173px;
 }
-/* line 43, ../../sass/views/_viewport.scss */
+/* line 40, ../../sass/views/_viewport.scss */
+#site-wrapper.menu-visible:after {
+    content: '';
+    background: black;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    position: absolute;
+}
+/* line 54, ../../sass/views/_viewport.scss */
 #site-wrapper.menu-visible.align-left .navigation {
     left: 0;
 }
-/* line 47, ../../sass/views/_viewport.scss */
+/* line 58, ../../sass/views/_viewport.scss */
 #site-wrapper.menu-visible.align-left #viewport {
     left: 400px;
     right: -400px;
     padding-left: 0;
 }
-/* line 56, ../../sass/views/_viewport.scss */
+/* line 67, ../../sass/views/_viewport.scss */
 #site-wrapper.menu-visible.align-right .navigation {
     right: 0;
 }
-/* line 60, ../../sass/views/_viewport.scss */
+/* line 71, ../../sass/views/_viewport.scss */
 #site-wrapper.menu-visible.align-right #viewport {
     right: 400px;
     left: -400px;
@@ -8867,6 +8914,7 @@ button.close {
         background-image: url("assets/img/panes/home_china_mobile_portrait_06.jpg");
     }
 }
+
 /* line 2, ../../sass/views/_ab_testing.scss */
 .uk.cms #home-01 {
     background: none !important;

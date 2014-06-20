@@ -14,11 +14,14 @@
         </div>
 
         <div class="submenu">
-            <a href="#" class="hotspot"></a>
+            <div class="scroll-box">
+                <a href="#" class="hotspot"></a>
+            </div>
         </div>
 
         <div class="child-menu">
-            <a href="#" class="hotspot"></a>
+            <div class="scroll-box">
+            </div>
         </div>
     </div>
 
