@@ -27,6 +27,11 @@
 
     <div id="viewport">
         <div id="home-01" class="pane">
+            <div class="wobblies">
+                <div class="heading"></div>
+                <div class="text"></div>
+                <div class="tweet"></div>
+            </div>
             <cq:include path="centralpar" resourceType="foundation/components/parsys"/>
         </div>
         <div id="home-02" class="pane">
