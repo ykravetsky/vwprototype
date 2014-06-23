@@ -8776,7 +8776,7 @@ button.close {
     height: 100%;
     max-width: 1440px;
     min-width: 320px;
-    min-height: 3500px;
+    min-height: 3500px;/*workarround for AEM6*/
 }
 /* line 8, ../../sass/views/_viewport.scss */
 #site-wrapper #viewport {
