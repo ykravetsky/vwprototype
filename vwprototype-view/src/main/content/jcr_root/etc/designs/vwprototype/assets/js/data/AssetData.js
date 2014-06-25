@@ -1,28 +1,38 @@
-define([], function() {
+(function() {
 
 
-    var images = {
+   var ns =  MKK.getNamespace('data');
 
-        desktop: {
-            pane1: 'assets/img/panes/home_uk_desktop_01.jpg'
-        },
-        tablet: {
+   if(!ns.AssetData){
+        var AssetData = {
 
-        },
-        mobile: {
+            desktop: {
+                pane1: 'assets/img/panes/home_uk_desktop_01.jpg'
+            },
+            tablet: {
 
-        },
+            },
+            mobile: {
+                carousel1: [
+                    '/assets/img/carousel1/image1.png',
+                    '/assets/img/carousel1/image2.png',
+                    '/assets/img/carousel1/image3.png',
+                    '/assets/img/carousel1/image4.png',
+                    '/assets/img/carousel1/image5.png',
+                ]
+            },
 
-    };
+            sound: {
 
-    var sound = {
+                test: {
+                    gameover: 'assets/sound/demo-gameover.wav'
+                }
+            }
 
-        test: {
-            gameover: 'assets/sound/demo-gameover.wav'
-        }
-    };
+        };
 
-    return {images: images, sound: sound};
+        ns.AssetData = AssetData;
+    }
 
 
-});
+})();

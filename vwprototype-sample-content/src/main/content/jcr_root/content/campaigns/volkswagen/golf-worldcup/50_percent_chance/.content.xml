@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2014-06-25T18:21:04.019+02:00"
+        cq:lastModifiedBy="admin"
+        cq:segments="[/etc/segmentation/geometrixx-outdoors/50-percent-chance]"
+        cq:template="/libs/cq/personalization/templates/experience"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="50% Chance"
+        sling:resourceType="cq/personalization/components/experiencepage">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys"/>
+        <image
+            jcr:lastModified="{Date}2014-06-25T17:29:20.062+02:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+    </jcr:content>
+    <hero1/>
+    <hero2/>
+</jcr:root>

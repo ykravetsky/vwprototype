@@ -1,9 +1,13 @@
-define([
+(function(){
 
-    "base/events/EventDispatcher"
-    ], function(EventDispatcher) {
+	var ns = MKK.getNamespace('mkk.events');
+	var ListenerFunctions = MKK.getNamespace('mkk.events').ListenerFunctions;
+	var EventDispatcher = MKK.getNamespace('mkk.events').EventDispatcher;
+	var MathBase = MKK.getNamespace('mkk.math').MathBase;
 
-        var TouchEvent = function TouchEvent(target,isPreventDefault) {
+	if (!ns.TouchEvent) {
+
+		var TouchEvent = function TouchEvent(target,isPreventDefault) {
 
             this._eventListener = null;
             this.target = target;
@@ -11,7 +15,8 @@ define([
             this.settings = {
 
                 tapRange: 80,
-                swipeRange: 150,
+                swipeRange: 40,
+                maxSpeed: 0.40,
                 tapHoldDuration: 1000
             }
 
@@ -24,11 +29,15 @@ define([
         TouchEvent.HOLDEND = 'holdend';
         TouchEvent.HOLDING = 'holding';
         TouchEvent.SWIPE = 'swipe';
+        TouchEvent.SWIPEHORIZONTAL = 'swipehorizontal';
+        TouchEvent.SWIPELEFT = 'swipeleft';
+        TouchEvent.SWIPERIGHT = 'swiperight';
         TouchEvent.DRAG = 'drag';
         TouchEvent.DRAGEND = 'dragend';
 
         var p = TouchEvent.prototype = new EventDispatcher();
 
+        ns.TouchEvent = TouchEvent;
 
         // ------------------------------------
         // tap and hold detection
@@ -65,9 +74,9 @@ define([
             this.touchStartTime = Date.now();
             if(e.touches) { 
                 this.prevPX = e.touches[0].pageX;  
-                this.prevPY = e.touches[0].pageY;
-                var clientX = e.changedTouches[0].pageX - this.target.offsetLeft;
-                var clientY = e.changedTouches[0].pageY - this.target.offsetTop;
+                this.prevPY = e.touches[0].pageY; 
+                var clientX = this.prevClientX = e.changedTouches[0].pageX - this.target.offsetLeft;
+                var clientY = this.prevClientY = e.changedTouches[0].pageY - this.target.offsetTop;
             }
             else { 
                 this.prevPX = e.pageX;
@@ -77,12 +86,13 @@ define([
                 this.isMouseDown = true;
             }
 
+            console.log('x: ', this.prevPX, 'y: ', this.prevPY);
             this.dispatchCustomEvent(TouchEvent.TAPSTART, { x:clientX, y: clientY  });
 
         }
 
         p.touchMoveHandler = function(e) {
-            if(this.isPreventDefault) e.preventDefault();
+
             if(e.touches) { 
                 pX = e.changedTouches[0].pageX;
                 pY = e.changedTouches[0].pageY;
@@ -98,8 +108,12 @@ define([
 
             var xDist = pX - this.prevPX;
             var yDist = pY = this.prevPY;
+            var activeXDist = clientX - this.prevClientX;
+            var activeYDist = clientY - this.prevClientY;
+            // if(this.isPreventDefault) e.preventDefault();
+            if(this.isPreventDefault) { e.preventDefault(); }
             if(this.isMouse && !this.isMouseDown) return;
-            this.dispatchCustomEvent(TouchEvent.DRAG, { x: clientX, y: clientY, xDistance: xDist, yDistance: yDist });
+            this.dispatchCustomEvent(TouchEvent.DRAG, { x: clientX, y: clientY, xDistance: activeXDist, yDistance: activeYDist });
 
         }
 
@@ -127,7 +141,14 @@ define([
 
             var xDist = Math.abs( pX - this.prevPX );
             var yDist = Math.abs( pY - this.prevPY );
+
             var vDist = Math.sqrt(xDist*xDist + yDist*yDist);
+            var vSign = MathBase.Sign(pX - this.prevPX);
+            var ySpeed = Math.ceil( yDist * 1000 / touchEndTime ) / 1000;
+            var xSpeed = Math.ceil( xDist * 1000 / touchEndTime ) / 1000;
+            console.log(xSpeed)
+
+            // console.log('xspeed: ', xSpeed,xDist, ' ySpeed: ', ySpeed, yDist );
 
             //detect tap and hold
             if( xDist<=( this.settings.tapRange/2 ) && yDist<=( this.settings.tapRange/2 ) ) {
@@ -139,9 +160,16 @@ define([
                     this.dispatchCustomEvent(TouchEvent.TAP, { x:clientX, y: clientY  });
                 }
             }
-            //detect swipe
-            else if( vDist >= this.settings.swipeRange ){
-                this.dispatchCustomEvent(TouchEvent.SWIPE, {xDistance: xDist, yDistance: yDist});
+            //detect horizontal swipe
+            else if( xDist >= this.settings.swipeRange && xSpeed>this.settings.maxSpeed ){
+                this.dispatchCustomEvent(TouchEvent.SWIPEHORIZONTAL, {xDistance: xDist, yDistance: yDist});
+
+                if(vSign>0) {
+                    this.dispatchCustomEvent(TouchEvent.SWIPERIGHT, {xDistance: xDist, yDistance: yDist});
+                }
+                else {
+                    this.dispatchCustomEvent(TouchEvent.SWIPELEFT, {xDistance: xDist, yDistance: yDist});
+                }
             }
 
             if(this.isDragging) {
@@ -150,13 +178,12 @@ define([
             }
 
             this.touchStartTime = null;
+            this.prevPX = null;
+            this.prevPY = null;
 
             return true;
         }
 
+	}
 
-
-
-        return TouchEvent;
-
-    })
+})();

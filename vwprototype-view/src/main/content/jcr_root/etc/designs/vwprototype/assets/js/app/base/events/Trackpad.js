@@ -1,8 +1,14 @@
-define([
-	'base/events/EventDispatcher'
-	], function(EventDispatcher){
+(function(){
+
+	var ns = MKK.getNamespace('mkk.events');
+	var ListenerFunctions = MKK.getNamespace('mkk.events').ListenerFunctions;
+	var EventDispatcher = MKK.getNamespace('mkk.events').EventDispatcher;
+	var Mathbase = MKK.getNamespace('mkk.math').MathBase;
+
+	if (!ns.Trackpad) {
 
 		var Trackpad = function Trackpad(target) {
+
 			//vars
 			this.target = target;
 			this.speedDamper = 0.92;
@@ -19,32 +25,29 @@ define([
 			this.minSwipeDistance = 120;
 		}
 
+
+		ns.Trackpad = Trackpad;
 		var p = Trackpad.prototype = new EventDispatcher();
+
 
 		p.setup = function() {
 
 			console.log('Trackpad setup');
 
-			var that = this;
 			// Mouse Wheel Handler
-			// this.mousewheelBound = ListenerFunctions.createListenerFunction(this, this.mousewheelHandler);
-			this.mousewheelBound = function(e) { that.mousewheelHandler(e) };
+			this.mousewheelBound = ListenerFunctions.createListenerFunction(this, this.mousewheelHandler);
 			this.target.addEventListener('mousewheel', this.mousewheelBound);
 
 			// Touch Handler
-			// this.touchStartBound = ListenerFunctions.createListenerFunction(this, this.touchstartHandler);
-			this.touchStartBound = function(e) { that.touchstartHandler(e) };
+			this.touchStartBound = ListenerFunctions.createListenerFunction(this, this.touchstartHandler);
 			this.target.addEventListener('touchstart', this.touchStartBound);
 
-			// this.touchMoveBound = ListenerFunctions.createListenerFunction(this, this.touchmoveHandler);
-			// this.touchEndBound = ListenerFunctions.createListenerFunction(this, this.touchendHandler);
-			this.touchMoveBound = function(e) { that.touchmoveHandler(e) };
-			this.touchEndBound = function(e) { that.touchendHandler(e) };
+			this.touchMoveBound = ListenerFunctions.createListenerFunction(this, this.touchmoveHandler);
+			this.touchEndBound = ListenerFunctions.createListenerFunction(this, this.touchendHandler);
 
 
 			//on arrow button pressed
-			// this.onarrowBound = ListenerFunctions.createListenerFunction(this, this.onArrowHandler);
-			this.onarrowBound = function(e) { that.onArrowHandler(e) };
+			this.onarrowBound = ListenerFunctions.createListenerFunction(this, this.onArrowHandler);
 			document.body.addEventListener('keydown', this.onarrowBound);
 
 		}
@@ -187,8 +190,13 @@ define([
 			this.endDrag(e);
 		}
 
-		return Trackpad;
 
 
 
-});
+	}
+
+
+
+
+
+})();

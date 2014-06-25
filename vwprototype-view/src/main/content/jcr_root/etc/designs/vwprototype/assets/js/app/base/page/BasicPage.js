@@ -1,45 +1,28 @@
-// -------------------------------------
-// Basic page
-// -------------------------------------
-define(['jquery', 'base/events/EventDispatcher'], function($, EventDispatcher){
+(function(){
+
+	var ns = MKK.getNamespace('mkk.page');
+	var Core = MKK.getNamespace('mkk.core').Core;
+	console.log('basic')
+	if(!ns.BasicPage){
+
+		var BasicPage = function BasicPage() {
 
 
-    var BasicPage = function() {
+			this.setup();
+		}
 
-        
-    }
+		var p = BasicPage.prototype = new Core();
 
-    var p = BasicPage.prototype = new EventDispatcher();
+		ns.BasicPage = BasicPage;
 
-    //setup to be inherited and overwritten
-    p.setup = function() {}
+		p.setup = function() {
 
-    //pre setup
-    p._setup = function() {}
-
-    //output html to beh overwritten
-    p.html = function() {}
-
-    //animate in
-    p.animateIn = function() {}
-
-    //animate in complete
-    p.animateInComplete = function() {}
-
-    //animate out
-    p.animateOut = function() {}
-
-    //animate out complete
-    p.animateOutComplete = function() {}
-
-    //show
-    p.show = function() {}
-
-    //hide
-    p.hide = function() {}
+		}
 
 
-    return BasicPage;
 
 
-});
+	}
+
+
+})();

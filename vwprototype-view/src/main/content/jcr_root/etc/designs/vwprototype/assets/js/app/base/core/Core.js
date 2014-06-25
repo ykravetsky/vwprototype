@@ -1,28 +1,31 @@
-define([
+(function() {
 
-    "base/events/EventDispatcher"
+	var ns = MKK.getNamespace('mkk.core');
+	var EventDispatcher = MKK.getNamespace('mkk.events').EventDispatcher;
 
-    ], function(EventDispatcher){
+	if(!ns.Core) {
 
-        var Core = function Core() {
+		var Core = function Core() {
 
+		}
 
+		var p = Core.prototype = new EventDispatcher();
 
-            this.setup();
-        }
+		ns.Core = Core;
 
-        var p = Core.prototype = new EventDispatcher();
+		p.setup = function() {
+			this._setup();
+		}
 
-        p.setup = function() {
+		p._setup = function() {
+			console.log('Core Setup :: ');
+			this.disableScrollBars();
+		}
 
-            this._setup();
-        }
-
-        p._setup = function() {
-
-        }
-
-
-        return Core;
-
-});
+		//function to disable scroller
+		p.disableScrollBars = function() {
+			document.documentElement.style.overflow = 'hidden';  // firefox, chrome
+    		document.body.scroll = "no"; // ie only
+		}
+	}
+})();

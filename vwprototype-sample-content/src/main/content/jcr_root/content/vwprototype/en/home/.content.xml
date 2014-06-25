@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2014-06-20T17:56:04.105+02:00"
+        cq:lastModified="{Date}2014-06-25T16:22:42.973+02:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/vwprototype/templates/home"
         jcr:primaryType="cq:PageContent"
@@ -22,11 +22,12 @@
                 <default
                     jcr:created="{Date}2014-04-01T10:14:38.999+03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2014-06-20T17:53:21.507+02:00"
+                    jcr:lastModified="{Date}2014-06-25T16:22:42.966+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="foundation/components/image"
-                    fileReference="/content/dam/vwprototype/heroimages/GTI_2016x946.png"/>
+                    fileReference="/content/dam/vwprototype/heroimages/H1.jpg"
+                    imageRotate="0"/>
             </target>
         </centralpar>
     </jcr:content>

@@ -1,12 +1,17 @@
-define([
-	'base/math/MathBase',
-	'base/events/EventDispatcher',
-	'base/events/Trackpad'
-	], function(MathBase, EventDispatcher, Trackpad){
+(function(){
 
-		var Scroller = function Scroller(target, maxScroll) {
+	var EventDispatcher = MKK.getNamespace('mkk.events').EventDispatcher;
+	var ns = MKK.getNamespace('app.events');
+	var Trackpad = MKK.getNamespace('mkk.events').Trackpad;
+	var MathBase = MKK.getNamespace('mkk.math').MathBase;
 
-			this.target = target;
+
+	if (!ns.Scroller) {
+
+		var Scroller = function Scroller(maxScroll) {
+
+			this.gui = null;
+			this.view = null;
 			this.isStop = false;
 			this.isDebug = false;
 			this.scrollSpeedDamper = 0.05;
@@ -15,15 +20,44 @@ define([
 			this.minSpeed = -200;
 			this.isAutoScrolling = false;
 			this.scrollMax = maxScroll || 1000;
-
-			this.setup(this.target);
+			// this.speedRange = 10000;
 		}
 
+		ns.Scroller = Scroller;
 		var p = Scroller.prototype = new EventDispatcher();
+		var s = EventDispatcher.prototype;
 
-		p.setup = function(target) {
-			this.target = target;
-			this.trackpad = new Trackpad(this.target);
+
+		p.debug = function(gui) {
+
+			this.gui = gui;
+			this.isDebug = true;
+			this.f1 = this.gui.addFolder('Easing & Interpolation');
+			this.f1.add(this, 'scrollSpeedDamper', 0.01, 0.2);
+
+			// this.f1.open();
+
+			this.scrollDisplay = document.createElement('div');
+			this.scrollDisplay.style.background = 'rgb(0, 0, 34)';
+			this.scrollDisplay.style.width = '60px';
+			this.scrollDisplay.style.height = '14px';
+			this.scrollDisplay.style.display = 'block';
+			this.scrollDisplay.style.position = 'absolute';
+			this.scrollDisplay.style.left = '0px';
+			this.scrollDisplay.style.bottom = '0px';
+			this.scrollDisplay.style.padding = '17px 10px';
+			this.scrollDisplay.style.fontFamily = 'Arial';
+			this.scrollDisplay.style.fontSize = '11px';
+			this.scrollDisplay.style.color = 'rgb(0, 255, 255)';
+			this.scrollDisplay.style.textAlign = 'center';
+
+			document.body.appendChild(this.scrollDisplay);
+	
+		}
+
+		p.setup = function(view) {
+			this.view = view;
+			this.trackpad = new Trackpad(this.view);
 			this.trackpad.setup();
 		}
 
@@ -35,6 +69,8 @@ define([
 			//return distance in 3 decimal places for accurate scrolling
 			return Math.round(this.distance*1000)/1000;
 		}
+
+
 
 		p.scrollto = function(toPos) {
 
@@ -93,8 +129,7 @@ define([
 		}	
 
 
-		return Scroller;
+	}
 
 
-
-});
+})();

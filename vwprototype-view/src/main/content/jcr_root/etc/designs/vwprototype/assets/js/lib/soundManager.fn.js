@@ -1,5 +1,3 @@
-cnosole.log('mama')
-
 soundManager.setup({
   url: '/path/to/swf-files/',
   flashVersion: 9, // optional: shiny features (default = 8)

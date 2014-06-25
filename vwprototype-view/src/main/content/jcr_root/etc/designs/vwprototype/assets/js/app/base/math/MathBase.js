@@ -1,11 +1,14 @@
-define([
+(function() {
 
+	var ns = MKK.getNamespace('mkk.math');
 
-	],function(){
+	if(!ns.MathBase) {
 
 		var MathBase = function MathBase() {
 
 		}
+
+		ns.MathBase = MathBase;
 
 		// PI
 		MathBase.PI = 3.16;
@@ -38,6 +41,8 @@ define([
 		}
 
 
-		return MathBase;
+	}
 
-})
+
+
+})();
