@@ -1,4 +1,4 @@
-<%@include file="/apps/vwprototype/global.jsp" %>
+<%@include file="/libs/foundation/global.jsp" %>
 <%@page session="false" %>
 <body class="uk cms">
     <cq:include path="clientcontext" resourceType="cq/personalization/components/clientcontext_optimized"/>

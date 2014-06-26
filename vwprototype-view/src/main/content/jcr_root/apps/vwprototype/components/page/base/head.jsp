@@ -34,6 +34,7 @@
         <%-- Makes HTML5 elements listen to CSS styling in IE6-8 (aka HTML5 Shiv) - this is using the IE conditional comments feature --%>
         /*@cc_on(function(){var e=['abbr','article','aside','audio','canvas','details','figcaption','figure','footer','header','hgroup','mark','meter','nav','output','progress','section','summary','time','video'];for (var i = e.length; i-- > 0;) document.createElement(e[i]);})();@*/
     </script>
+    <cq:includeClientLib categories="apps.geometrixx-outdoors.desktop.all"/>
     <cq:include script="/libs/wcm/core/components/init/init.jsp"/>
     <cq:include script="/libs/foundation/components/page/stats.jsp"/>
     <cq:include script="/libs/cq/cloudserviceconfigs/components/servicelibs/servicelibs.jsp"/>

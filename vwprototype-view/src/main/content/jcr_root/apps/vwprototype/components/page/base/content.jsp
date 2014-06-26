@@ -1,1 +1,1 @@
-<%@include file="/apps/vwprototype/global.jsp" %>
+<%@include file="/libs/foundation/global.jsp" %>

@@ -1,5 +1,5 @@
 <%@page session="false" %>
-<%@include file="/apps/vwprototype/global.jsp" %>
+<%@include file="/libs/foundation/global.jsp" %>
 
 <jsp:useBean id="textcomp" scope="page" class="com.sapientnitro.vwprototype.components.TextComponent"></jsp:useBean>
 <jsp:setProperty name="textcomp" property="slingRequest" value="<%=slingRequest %>"/>
