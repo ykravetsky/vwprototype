@@ -176,7 +176,7 @@
                     lib+"PxLoaderSound.js",
                     lib+"PxLoaderVideo.js",
                     lib+"TWEEN.js",
-                    lib+"cordova.js",
+                    //lib+"cordova.js",
 
                     base+"SiteManager.js",
 
