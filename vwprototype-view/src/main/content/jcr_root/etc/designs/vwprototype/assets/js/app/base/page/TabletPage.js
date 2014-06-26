@@ -91,6 +91,44 @@
 			$('.topbar').hide();
 	     	$('.sidebar').show();
 
+	 		$('#viewport').on('taphold',function(){
+	 			$('#social-overlay').addClass('active');
+	 		});
+
+	 		$('#open-video-overlay').on('tap',function(){
+	 			$('#video-overlay').addClass('active');
+	 		});
+
+	 		// Hides social overlay
+
+	     	$('#close-social').on('tap',function(){
+
+	     		var overlay = $('#social-overlay'); 
+
+	     		$(overlay).addClass('go-away');
+		     	setTimeout(function() {
+	      			$(overlay).removeClass('active');
+				}, 500)
+		     	setTimeout(function() {
+	      			$(overlay).removeClass('go-away');
+				}, 700)
+	     	});
+
+	     	// Hides video overlay
+
+	     	$('#close-video').on('tap',function(){
+
+	     		var overlay = $('#video-overlay'); 
+
+	     		$(overlay).addClass('go-away');
+		     	setTimeout(function() {
+	      			$(overlay).removeClass('active');
+				}, 500)
+		     	setTimeout(function() {
+	      			$(overlay).removeClass('go-away');
+				}, 700)
+	     	});
+
 			// Adds animate class on load.
 			$('.wobblies').addClass('animate');
 

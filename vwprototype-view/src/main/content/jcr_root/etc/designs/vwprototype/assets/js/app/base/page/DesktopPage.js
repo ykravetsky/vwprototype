@@ -37,6 +37,72 @@
 			$('.topbar').hide();
 	     	$('.sidebar').show();
 
+	     	// Mock up car-carousel for desktop
+
+	     	$('.car-carousel .tabs a').on('tap',function(){
+	     		$(this).parent().find('a').removeClass('active');
+	     		$('#slide-wrapper').removeClass();
+	     		$(this).addClass('active');
+
+	     		if ( $(this).attr("id") == "slide-link-01" ){
+	     			$('#slide-wrapper').addClass('show-01');
+
+	     		} else if ( $(this).attr("id") == "slide-link-02" ){
+	     			$('#slide-wrapper').addClass('show-02');
+
+	     		} else if ( $(this).attr("id") == "slide-link-03" ){
+	     			$('#slide-wrapper').addClass('show-03');
+
+	     		} else if ( $(this).attr("id") == "slide-link-04" ){
+	     			$('#slide-wrapper').addClass('show-04');
+
+	     		} else {
+	     			$('#slide-wrapper').addClass('show-05');
+	     		}
+	     	});
+
+	 		$('#viewport').on('taphold',function(){
+	 			$('#close-social').addClass('active');
+	 		});
+
+	 		$('#open-video-overlay').on('tap',function(){
+	 			$('#video-overlay').addClass('active');
+	 		});
+
+	 		$('.share-this').on('tap',function(){
+	 			$('#social-overlay').addClass('active');
+	 		});
+
+	 		// Hides social overlay
+
+	     	$('#close-social').on('tap',function(){
+
+	     		var overlay = $('#social-overlay'); 
+
+	     		$(overlay).addClass('go-away');
+		     	setTimeout(function() {
+	      			$(overlay).removeClass('active');
+				}, 500)
+		     	setTimeout(function() {
+	      			$(overlay).removeClass('go-away');
+				}, 700)
+	     	});
+
+	     	// Hides video overlay
+
+	     	$('#close-video').on('tap',function(){
+
+	     		var overlay = $('#video-overlay'); 
+
+	     		$(overlay).addClass('go-away');
+		     	setTimeout(function() {
+	      			$(overlay).removeClass('active');
+				}, 500)
+		     	setTimeout(function() {
+	      			$(overlay).removeClass('go-away');
+				}, 700)
+	     	});
+
 			// Adds animate class on load.
 			$('.wobblies').addClass('animate');
 

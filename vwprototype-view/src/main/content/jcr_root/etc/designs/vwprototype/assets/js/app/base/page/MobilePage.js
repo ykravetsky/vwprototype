@@ -13,7 +13,7 @@
 
 			this.setup();
 
-			this.topbarPos = [10, -147, -297];
+			this.topbarPos = [0, -166, -308, -418, -570];
 		}
 
 		var p = MobilePage.prototype = new BasicPage();
@@ -40,6 +40,45 @@
 			//hide show stuff
 			$('.topbar').show();
 			$('.sidebar').hide();
+
+
+	 		$('#viewport').on('taphold',function(){
+	 			$('#close-social').addClass('active');
+	 		});
+
+	 		$('#open-video-overlay').on('tap',function(){
+	 			$('#video-overlay').addClass('active');
+	 		});
+
+	 		// Hides social overlay
+
+	     	$('#close-social').on('tap',function(){
+
+	     		var overlay = $('#social-overlay'); 
+
+	     		$(overlay).addClass('go-away');
+		     	setTimeout(function() {
+	      			$(overlay).removeClass('active');
+				}, 500)
+		     	setTimeout(function() {
+	      			$(overlay).removeClass('go-away');
+				}, 700)
+	     	});
+
+	     	// Hides video overlay
+
+	     	$('#close-video').on('tap',function(){
+
+	     		var overlay = $('#video-overlay'); 
+
+	     		$(overlay).addClass('go-away');
+		     	setTimeout(function() {
+	      			$(overlay).removeClass('active');
+				}, 500)
+		     	setTimeout(function() {
+	      			$(overlay).removeClass('go-away');
+				}, 700)
+	     	});
 		}
 
 		p.initPointerAnim = function() {
@@ -155,6 +194,7 @@
 			this.currentScrollTop = $('#viewport')[0].scrollTop;
 			this.activeCarousel = null;
 			this.activeTopbar = null;
+			var iLen = this.topbarPos.length-1;
 			for(var i=0; i<this.pane.length; i++) {				
 				var calT = this.pane[i].parentNode.parentNode.offsetTop - 200;
 				var calH = (calT + this.pane[i].parentNode.parentNode.offsetHeight);
@@ -163,8 +203,8 @@
 				if(this.currentScrollTop>calT && this.currentScrollTop<calH) {
 					this.activeCarousel = $(this.pane[i]).find('.carousel-bg-inner')[0];
 					this.activeTopbar = $(this.topbar[i])[0];
-					if(this.index<2) this.index++;
-					else if(this.index>=2) this.index=2;
+					if(this.index<iLen) this.index++;
+					else if(this.index>=iLen) this.index=iLen;
 				}
 			}	
 

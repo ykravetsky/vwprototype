@@ -7,7 +7,7 @@
         var AssetData = {
 
             desktop: {
-                pane1: 'assets/img/panes/home_uk_desktop_01.jpg'
+                pane1: '/etc/designs/vwprototype/assets/img/panes/home_uk_desktop_01.jpg'
             },
             tablet: {
 
@@ -25,7 +25,7 @@
             sound: {
 
                 test: {
-                    gameover: 'assets/sound/demo-gameover.wav'
+                    gameover: '/etc/designs/vwprototype/assets/sound/demo-gameover.wav'
                 }
             }
 

@@ -1,5 +1,5 @@
 /* Import Essentials */
-/* line 17, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
     line-height: 1;
 }
 
-/* line 24, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
     list-style: none;
 }
 
-/* line 26, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
     text-align: left;
     font-weight: normal;
     vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
     quotes: none;
 }
-/* line 103, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none;
 }
 
-/* line 32, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
     border: none;
 }
 
-/* line 116, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
     display: block;
 }
@@ -13724,68 +13724,72 @@ button.close {
 /* Import Fonts */
 @font-face {
     font-family: "VWHeadlineOT-Black";
-    src: url("assets/fonts/VWHeadlineOT-Black.eot"), url("assets/fonts/VWHeadlineOT-Black.woff") format("woff"), url("assets/fonts/VWHeadlineOT-Black.tff") format("truetype");
+    src: url("/etc/designs/vwprototype/assets/fonts/VWHeadlineOT-Black.eot"), url("/etc/designs/vwprototype/assets/fonts/VWHeadlineOT-Black.woff") format("woff"), url("/etc/designs/vwprototype/assets/fonts/VWHeadlineOT-Black.tff") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "VWHeadlineOT-Book";
-    src: url("assets/fonts/VWHeadlineOT-Book.eot"), url("assets/fonts/VWHeadlineOT-Book.woff") format("woff"), url("assets/fonts/VWHeadlineOT-Book.tff") format("truetype");
+    src: url("/etc/designs/vwprototype/assets/fonts/VWHeadlineOT-Book.eot"), url("/etc/designs/vwprototype/assets/fonts/VWHeadlineOT-Book.woff") format("woff"), url("/etc/designs/vwprototype/assets/fonts/VWHeadlineOT-Book.tff") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "VWHeadlineOT-Semibold";
-    src: url("assets/fonts/VWHeadlineOT-Semibold.eot"), url("assets/fonts/VWHeadlineOT-Semibold.woff") format("woff"), url("assets/fonts/VWHeadlineOT-Semibold.tff") format("truetype");
+    src: url("/etc/designs/vwprototype/assets/fonts/VWHeadlineOT-Semibold.eot"), url("/etc/designs/vwprototype/assets/fonts/VWHeadlineOT-Semibold.woff") format("woff"), url("/etc/designs/vwprototype/assets/fonts/VWHeadlineOT-Semibold.tff") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 /* Migrate Graham's Navigation CSS to here and refactor to new design */
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
     /* line 5, ../../sass/components/_footer.scss */
     .uk #footer {
-        height: 90px;
-        background-image: url("assets/img/panes/footer_uk_desktop.jpg");
+        height: 81px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/footer_uk_desktop.jpg");
+    }
+    /* line 9, ../../sass/components/_footer.scss */
+    .uk #footer:after {
+        display: none;
     }
 }
 @media (max-width: 1024px) and (min-width: 768px) {
-    /* line 14, ../../sass/components/_footer.scss */
+    /* line 18, ../../sass/components/_footer.scss */
     .uk #footer {
-        height: 59px;
-        background-size: 1024px 59px;
-        background-image: url("assets/img/panes/footer_uk_tablet_landscape.jpg");
+        height: 90px;
+        background-size: 1024px 90px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/footer_uk_tablet_landscape.jpg");
     }
 }
 @media (max-width: 768px) and (min-width: 320px) {
-    /* line 24, ../../sass/components/_footer.scss */
+    /* line 28, ../../sass/components/_footer.scss */
     .uk #footer {
-        height: 59px;
-        background-size: 768px 59px;
-        background-image: url("assets/img/panes/footer_uk_tablet_portrait.jpg");
+        height: 68px;
+        background-size: 768px 68px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/footer_uk_tablet_portrait.jpg");
     }
 }
 @media (max-width: 320px) {
-    /* line 34, ../../sass/components/_footer.scss */
+    /* line 38, ../../sass/components/_footer.scss */
     .uk #footer {
-        height: 261px;
-        background-size: 320px 261px;
-        background-image: url("assets/img/panes/footer_uk_mobile_portrait.jpg");
+        height: 300px;
+        background-size: 320px 300px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/footer_uk_mobile_portrait.jpg");
     }
 }
 
-/* line 44, ../../sass/components/_footer.scss */
+/* line 48, ../../sass/components/_footer.scss */
 .china #footer {
     height: 88px;
-    background-image: url("assets/img/panes/footer_china_desktop.jpg");
+    background-image: url("/etc/designs/vwprototype/assets/img/panes/footer_china_desktop.jpg");
 }
 
-/* line 51, ../../sass/components/_footer.scss */
+/* line 55, ../../sass/components/_footer.scss */
 .arab #footer {
     height: 88px;
-    background-image: url("assets/img/panes/footer_arab_desktop.jpg");
+    background-image: url("/etc/designs/vwprototype/assets/img/panes/footer_arab_desktop.jpg");
 }
 
 /* line 1, ../../sass/components/_pane.scss */
@@ -13809,15 +13813,19 @@ button.close {
 }
 /* line 19, ../../sass/components/_pane.scss */
 .pane .hotspot {
-    background: red;
+    height: 50px;
+    width: 50px;
+    display: block;
+    right: 0;
+    top: 0;
     opacity: 1;
     position: absolute;
 }
-/* line 25, ../../sass/components/_pane.scss */
+/* line 29, ../../sass/components/_pane.scss */
 .pane .close {
     height: 30px;
     width: 30px;
-    background: url("assets/img/close.png") no-repeat;
+    background: url("/etc/designs/vwprototype/assets/img/close.png") no-repeat;
     opacity: 0.2;
     background-size: 30px 30px;
     position: absolute;
@@ -13829,9 +13837,23 @@ button.close {
     -o-transition: 0.15s ease-in-out;
     transition: 0.15s ease-in-out;
 }
-/* line 37, ../../sass/components/_pane.scss */
+/* line 41, ../../sass/components/_pane.scss */
 .pane .close:hover {
     opacity: 1;
+}
+@media (min-width: 1025px) {
+    /* line 48, ../../sass/components/_pane.scss */
+    .pane .share-this {
+        height: 40px;
+        width: 40px;
+        background: url("/etc/designs/vwprototype/assets/img/share-icon.png") no-repeat;
+        background-size: 40px 40px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: block;
+        content: '';
+    }
 }
 
 /* line 1, ../../sass/components/_navigation.scss */
@@ -13861,7 +13883,7 @@ button.close {
 }
 /* line 20, ../../sass/components/_navigation.scss */
 .navigation .tab {
-    background: url("assets/img/navigation_desktop_collapsed_01.jpg") top right no-repeat;
+    background: url("/etc/designs/vwprototype/assets/img/navigation_desktop_collapsed_01.jpg") top right no-repeat;
     width: 173px;
     height: 658px;
     position: absolute;
@@ -13885,7 +13907,7 @@ button.close {
         left: auto;
         bottom: auto;
         width: 100%;
-        background-image: url("assets/img/navigation_mobile_expanded_01.jpg");
+        background-image: url("/etc/designs/vwprototype/assets/img/navigation_mobile_expanded_01.jpg");
         background-size: 320px 520px;
         z-index: 1;
     }
@@ -13896,7 +13918,7 @@ button.close {
         left: 0;
         height: 519px;
         width: 320px;
-        background-image: url("assets/img/navigation_mobile_expanded_02.jpg");
+        background-image: url("/etc/designs/vwprototype/assets/img/navigation_mobile_expanded_02.jpg");
         background-size: 320px 520px;
     }
 }
@@ -13934,7 +13956,7 @@ button.close {
     height: 40px;
     width: 140px;
     background-size: 140px 40px;
-    background-image: url("assets/img/vertical-nav/vertical-nav-login.jpg");
+    background-image: url("/etc/designs/vwprototype/assets/img/vertical-nav/vertical-nav-login.jpg");
     background-position: left top;
     background-repeat: no-repeat;
     position: absolute;
@@ -13968,7 +13990,7 @@ button.close {
     height: 168px;
     z-index: 2;
     background-size: 140px 168px;
-    background-image: url("assets/img/vertical-nav/vertical-nav-head.jpg");
+    background-image: url("/etc/designs/vwprototype/assets/img/vertical-nav/vertical-nav-head.jpg");
     cursor: pointer;
     -webkit-transition: 0.25s height ease-in-out;
     -moz-transition: 0.25s height ease-in-out;
@@ -14007,7 +14029,7 @@ button.close {
     width: 140px;
     height: 560px;
     background-size: 140px 560px;
-    background-image: url("assets/img/vertical-nav/vertical-nav-submenu.jpg");
+    background-image: url("/etc/designs/vwprototype/assets/img/vertical-nav/vertical-nav-submenu.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
 }
@@ -14026,7 +14048,7 @@ button.close {
 }
 /* line 94, ../../sass/components/_sidebar.scss */
 .sidebar .submenu .hotspot#link-01.active {
-    background-image: url("assets/img/vertical-nav/vertical-nav-link-01-active.jpg");
+    background-image: url("/etc/designs/vwprototype/assets/img/vertical-nav/vertical-nav-link-01-active.jpg");
 }
 /* line 99, ../../sass/components/_sidebar.scss */
 .sidebar .submenu .hotspot#link-02 {
@@ -14045,7 +14067,7 @@ button.close {
 }
 /* line 113, ../../sass/components/_sidebar.scss */
 .sidebar .submenu .hotspot#link-04.active {
-    background-image: url("assets/img/vertical-nav/vertical-nav-link-04-active.jpg");
+    background-image: url("/etc/designs/vwprototype/assets/img/vertical-nav/vertical-nav-link-04-active.jpg");
 }
 /* line 118, ../../sass/components/_sidebar.scss */
 .sidebar .submenu .hotspot#link-05 {
@@ -14053,7 +14075,7 @@ button.close {
 }
 /* line 121, ../../sass/components/_sidebar.scss */
 .sidebar .submenu .hotspot#link-05.active {
-    background-image: url("assets/img/vertical-nav/vertical-nav-link-05-active.jpg");
+    background-image: url("/etc/designs/vwprototype/assets/img/vertical-nav/vertical-nav-link-05-active.jpg");
 }
 /* line 126, ../../sass/components/_sidebar.scss */
 .sidebar .submenu .hotspot#link-06 {
@@ -14061,7 +14083,7 @@ button.close {
 }
 /* line 129, ../../sass/components/_sidebar.scss */
 .sidebar .submenu .hotspot#link-06.active {
-    background-image: url("assets/img/vertical-nav/vertical-nav-link-06-active.jpg");
+    background-image: url("/etc/designs/vwprototype/assets/img/vertical-nav/vertical-nav-link-06-active.jpg");
 }
 /* line 136, ../../sass/components/_sidebar.scss */
 .sidebar .child-menu {
@@ -14115,7 +14137,7 @@ button.close {
     left: -190px;
     top: 0;
     background-size: 190px 768px;
-    background-image: url("assets/img/vertical-nav/vertical-nav-third-level.jpg");
+    background-image: url("/etc/designs/vwprototype/assets/img/vertical-nav/vertical-nav-third-level.jpg");
     background-repeat: no-repeat;
     background-color: #00a8df;
     z-index: 20;
@@ -14139,15 +14161,15 @@ button.close {
 }
 /* line 204, ../../sass/components/_sidebar.scss */
 .sidebar .child-menu#child-04 .scroll-box {
-    background-image: url("assets/img/vertical-nav/vertical-nav-child-menu-04.jpg");
+    background-image: url("/etc/designs/vwprototype/assets/img/vertical-nav/vertical-nav-child-menu-04.jpg");
 }
 /* line 208, ../../sass/components/_sidebar.scss */
 .sidebar .child-menu#child-05 .scroll-box {
-    background-image: url("assets/img/vertical-nav/vertical-nav-child-menu-05.jpg");
+    background-image: url("/etc/designs/vwprototype/assets/img/vertical-nav/vertical-nav-child-menu-05.jpg");
 }
 /* line 212, ../../sass/components/_sidebar.scss */
 .sidebar .child-menu#child-06 .scroll-box {
-    background-image: url("assets/img/vertical-nav/vertical-nav-child-menu-06.jpg");
+    background-image: url("/etc/designs/vwprototype/assets/img/vertical-nav/vertical-nav-child-menu-06.jpg");
 }
 @media (max-width: 320px) {
     /* line 1, ../../sass/components/_sidebar.scss */
@@ -14163,7 +14185,479 @@ button.close {
 }
 /* line 228, ../../sass/components/_sidebar.scss */
 .menu-visible .sidebar .submenu.active .scroll-box {
-    background-image: url("assets/img/nav-selected.jpg");
+    background-image: url("/etc/designs/vwprototype/assets/img/nav-selected.jpg");
+}
+
+/* line 1, ../../sass/components/_car-carousel.scss */
+.car-carousel {
+    width: 1300px;
+    height: 354px;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/* line 10, ../../sass/components/_car-carousel.scss */
+.car-carousel .tabs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 62px;
+    width: 1300px;
+    z-index: 1;
+}
+/* line 18, ../../sass/components/_car-carousel.scss */
+.car-carousel .tabs a {
+    width: 10px;
+    height: 62px;
+    background-image: url("/etc/designs/vwprototype/assets/img/car-carousel/car-carousel-models.jpg");
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+/* line 26, ../../sass/components/_car-carousel.scss */
+.car-carousel .tabs a:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid #d6e2e3;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transition: 0.25s bottom ease-in-out;
+    -moz-transition: 0.25s bottom ease-in-out;
+    -o-transition: 0.25s bottom ease-in-out;
+    transition: 0.25s bottom ease-in-out;
+}
+/* line 39, ../../sass/components/_car-carousel.scss */
+.car-carousel .tabs a#slide-link-01 {
+    width: 273px;
+    background-position-x: 0;
+}
+/* line 43, ../../sass/components/_car-carousel.scss */
+.car-carousel .tabs a#slide-link-01:after {
+    margin-left: 9px;
+}
+/* line 48, ../../sass/components/_car-carousel.scss */
+.car-carousel .tabs a#slide-link-02 {
+    width: 296px;
+    background-position-x: -273px;
+}
+/* line 52, ../../sass/components/_car-carousel.scss */
+.car-carousel .tabs a#slide-link-02:after {
+    margin-left: -20px;
+}
+/* line 57, ../../sass/components/_car-carousel.scss */
+.car-carousel .tabs a#slide-link-03 {
+    width: 171px;
+    background-position-x: -569px;
+}
+/* line 61, ../../sass/components/_car-carousel.scss */
+.car-carousel .tabs a#slide-link-03:after {
+    margin-left: -16px;
+}
+/* line 66, ../../sass/components/_car-carousel.scss */
+.car-carousel .tabs a#slide-link-04 {
+    width: 159px;
+    background-position-x: -740px;
+}
+/* line 70, ../../sass/components/_car-carousel.scss */
+.car-carousel .tabs a#slide-link-04:after {
+    margin-left: -23px;
+}
+/* line 75, ../../sass/components/_car-carousel.scss */
+.car-carousel .tabs a#slide-link-05 {
+    width: 400px;
+    background-position-x: -899px;
+}
+/* line 79, ../../sass/components/_car-carousel.scss */
+.car-carousel .tabs a#slide-link-05:after {
+    margin-left: -50px;
+}
+/* line 84, ../../sass/components/_car-carousel.scss */
+.car-carousel .tabs a.active {
+    background-position-y: -62px !important;
+}
+/* line 87, ../../sass/components/_car-carousel.scss */
+.car-carousel .tabs a.active:after {
+    bottom: -13px;
+}
+/* line 94, ../../sass/components/_car-carousel.scss */
+.car-carousel #slide-wrapper {
+    overflow: hidden;
+    height: 278px;
+    width: 6500px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    -webkit-transition: 1s left ease-in-out;
+    -moz-transition: 1s left ease-in-out;
+    -o-transition: 1s left ease-in-out;
+    transition: 1s left ease-in-out;
+}
+/* line 104, ../../sass/components/_car-carousel.scss */
+.car-carousel #slide-wrapper.show-01 {
+    left: 0;
+}
+/* line 108, ../../sass/components/_car-carousel.scss */
+.car-carousel #slide-wrapper.show-02 {
+    left: -1301px;
+}
+/* line 112, ../../sass/components/_car-carousel.scss */
+.car-carousel #slide-wrapper.show-03 {
+    left: -2602px;
+}
+/* line 116, ../../sass/components/_car-carousel.scss */
+.car-carousel #slide-wrapper.show-04 {
+    left: -3903px;
+}
+/* line 120, ../../sass/components/_car-carousel.scss */
+.car-carousel #slide-wrapper.show-05 {
+    left: -5204px;
+}
+/* line 124, ../../sass/components/_car-carousel.scss */
+.car-carousel #slide-wrapper .slide {
+    width: 1300px;
+    height: 278px;
+    float: left;
+}
+/* line 129, ../../sass/components/_car-carousel.scss */
+.car-carousel #slide-wrapper .slide#slide-01 {
+    background-image: url("/etc/designs/vwprototype/assets/img/car-carousel/car-carousel-slide-01.jpg");
+}
+/* line 133, ../../sass/components/_car-carousel.scss */
+.car-carousel #slide-wrapper .slide#slide-02 {
+    background-image: url("/etc/designs/vwprototype/assets/img/car-carousel/car-carousel-slide-02.jpg");
+}
+/* line 137, ../../sass/components/_car-carousel.scss */
+.car-carousel #slide-wrapper .slide#slide-03 {
+    background-image: url("/etc/designs/vwprototype/assets/img/car-carousel/car-carousel-slide-03.jpg");
+}
+/* line 141, ../../sass/components/_car-carousel.scss */
+.car-carousel #slide-wrapper .slide#slide-04 {
+    background-image: url("/etc/designs/vwprototype/assets/img/car-carousel/car-carousel-slide-04.jpg");
+}
+/* line 145, ../../sass/components/_car-carousel.scss */
+.car-carousel #slide-wrapper .slide#slide-05 {
+    background-image: url("/etc/designs/vwprototype/assets/img/car-carousel/car-carousel-slide-05.jpg");
+}
+@media (min-width: 1025px) {
+    /* line 1, ../../sass/components/_car-carousel.scss */
+    .car-carousel {
+        display: block;
+    }
+}
+
+@media (min-width: 1025px) {
+    @-webkit-keyframes fade-in {
+        /* line 4, ../../sass/components/_social-overlay.scss */
+        0% {
+            opacity: 0;
+        }
+
+        /* line 5, ../../sass/components/_social-overlay.scss */
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes dropin {
+        /* line 9, ../../sass/components/_social-overlay.scss */
+        0% {
+            margin-top: -100%;
+        }
+
+        /* line 10, ../../sass/components/_social-overlay.scss */
+        50% {
+            margin-top: -100%;
+        }
+
+        /* line 11, ../../sass/components/_social-overlay.scss */
+        100% {
+            margin-top: 243px;
+        }
+    }
+
+    @-webkit-keyframes fadeout {
+        /* line 15, ../../sass/components/_social-overlay.scss */
+        0% {
+            opacity: 1;
+        }
+
+        /* line 16, ../../sass/components/_social-overlay.scss */
+        100% {
+            opacity: 0;
+        }
+    }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+    @-webkit-keyframes dropin {
+        /* line 24, ../../sass/components/_social-overlay.scss */
+        0% {
+            margin-top: -100%;
+        }
+
+        /* line 25, ../../sass/components/_social-overlay.scss */
+        50% {
+            margin-top: -100%;
+        }
+
+        /* line 26, ../../sass/components/_social-overlay.scss */
+        100% {
+            margin-top: 167px;
+        }
+    }
+}
+@media (max-width: 768px) and (min-width: 320px) {
+    @-webkit-keyframes dropin {
+        /* line 34, ../../sass/components/_social-overlay.scss */
+        0% {
+            margin-top: -100%;
+        }
+
+        /* line 35, ../../sass/components/_social-overlay.scss */
+        50% {
+            margin-top: -100%;
+        }
+
+        /* line 36, ../../sass/components/_social-overlay.scss */
+        100% {
+            margin-top: 217px;
+        }
+    }
+}
+/* line 43, ../../sass/components/_social-overlay.scss */
+#social-overlay {
+    position: fixed;
+    top: 0;
+    left: 140px;
+    right: 0;
+    bottom: 0;
+    width: 1300px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9;
+    display: none;
+    -webkit-animation: fade-in 0.5s linear;
+}
+/* line 55, ../../sass/components/_social-overlay.scss */
+#social-overlay .content {
+    width: 490px;
+    height: 256px;
+    background: url("/etc/designs/vwprototype/assets/img/social_desktop.png") no-repeat;
+    margin: 243px auto;
+    position: relative;
+}
+/* line 62, ../../sass/components/_social-overlay.scss */
+#social-overlay .content #close-social {
+    top: -50px;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    display: block;
+    position: absolute;
+    background: url("/etc/designs/vwprototype/assets/img/close-icon.png") no-repeat;
+    background-size: 40px 40px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+    /* line 43, ../../sass/components/_social-overlay.scss */
+    #social-overlay {
+        width: 884px;
+    }
+    /* line 80, ../../sass/components/_social-overlay.scss */
+    #social-overlay .content {
+        margin-top: 167px;
+    }
+}
+@media (max-width: 768px) and (min-width: 320px) {
+    /* line 43, ../../sass/components/_social-overlay.scss */
+    #social-overlay {
+        width: 628px;
+    }
+    /* line 89, ../../sass/components/_social-overlay.scss */
+    #social-overlay .content {
+        margin-top: 217px;
+    }
+}
+@media (max-width: 320px) {
+    /* line 43, ../../sass/components/_social-overlay.scss */
+    #social-overlay {
+        left: 0;
+        width: 320px;
+    }
+    /* line 99, ../../sass/components/_social-overlay.scss */
+    #social-overlay .content {
+        margin-top: 220px;
+    }
+}
+/* line 104, ../../sass/components/_social-overlay.scss */
+#social-overlay.active {
+    display: block;
+}
+/* line 107, ../../sass/components/_social-overlay.scss */
+#social-overlay.active .content {
+    -webkit-animation: dropin 1s ease-in-out;
+}
+/* line 112, ../../sass/components/_social-overlay.scss */
+#social-overlay.go-away {
+    -webkit-animation: fadeout 0.5s ease-in-out;
+}
+
+@media (min-width: 1025px) {
+    @-webkit-keyframes dropinvideo {
+        /* line 4, ../../sass/components/_video-overlay.scss */
+        0% {
+            margin-top: -100%;
+        }
+
+        /* line 5, ../../sass/components/_video-overlay.scss */
+        50% {
+            margin-top: -100%;
+        }
+
+        /* line 6, ../../sass/components/_video-overlay.scss */
+        100% {
+            margin-top: 143px;
+        }
+    }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+    @-webkit-keyframes dropinvideo {
+        /* line 14, ../../sass/components/_video-overlay.scss */
+        0% {
+            margin-top: -100%;
+        }
+
+        /* line 15, ../../sass/components/_video-overlay.scss */
+        50% {
+            margin-top: -100%;
+        }
+
+        /* line 16, ../../sass/components/_video-overlay.scss */
+        100% {
+            margin-top: 167px;
+        }
+    }
+}
+@media (max-width: 768px) and (min-width: 320px) {
+    @-webkit-keyframes dropinvideo {
+        /* line 24, ../../sass/components/_video-overlay.scss */
+        0% {
+            margin-top: -100%;
+        }
+
+        /* line 25, ../../sass/components/_video-overlay.scss */
+        50% {
+            margin-top: -100%;
+        }
+
+        /* line 26, ../../sass/components/_video-overlay.scss */
+        100% {
+            margin-top: 217px;
+        }
+    }
+}
+/* line 31, ../../sass/components/_video-overlay.scss */
+#video-overlay {
+    position: fixed;
+    top: 0;
+    left: 140px;
+    right: 0;
+    bottom: 0;
+    width: 1300px;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9;
+    display: none;
+    -webkit-animation: fade-in 0.5s linear;
+}
+/* line 43, ../../sass/components/_video-overlay.scss */
+#video-overlay .content {
+    width: 936px;
+    height: 528px;
+    margin: 143px auto;
+    position: relative;
+}
+/* line 49, ../../sass/components/_video-overlay.scss */
+#video-overlay .content video {
+    width: 936px;
+    height: 528px;
+}
+/* line 54, ../../sass/components/_video-overlay.scss */
+#video-overlay .content #close-video {
+    top: -50px;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    display: block;
+    position: absolute;
+    background: url("/etc/designs/vwprototype/assets/img/close-icon.png") no-repeat;
+    background-size: 40px 40px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+    /* line 31, ../../sass/components/_video-overlay.scss */
+    #video-overlay {
+        width: 884px;
+    }
+    /* line 71, ../../sass/components/_video-overlay.scss */
+    #video-overlay .content {
+        width: 765px;
+        margin-top: 167px;
+    }
+    /* line 75, ../../sass/components/_video-overlay.scss */
+    #video-overlay .content video {
+        width: 765px;
+        height: 430px;
+    }
+}
+@media (max-width: 768px) and (min-width: 320px) {
+    /* line 31, ../../sass/components/_video-overlay.scss */
+    #video-overlay {
+        width: 628px;
+    }
+    /* line 86, ../../sass/components/_video-overlay.scss */
+    #video-overlay .content {
+        width: 505px;
+        margin-top: 217px;
+    }
+    /* line 90, ../../sass/components/_video-overlay.scss */
+    #video-overlay .content video {
+        width: 505px;
+        height: 285px;
+    }
+}
+@media (max-width: 320px) {
+    /* line 31, ../../sass/components/_video-overlay.scss */
+    #video-overlay {
+        left: 0;
+        width: 320px;
+    }
+    /* line 102, ../../sass/components/_video-overlay.scss */
+    #video-overlay .content {
+        width: 280px;
+        margin-top: 220px;
+    }
+    /* line 106, ../../sass/components/_video-overlay.scss */
+    #video-overlay .content video {
+        width: 280px;
+        height: 158px;
+    }
+}
+/* line 114, ../../sass/components/_video-overlay.scss */
+#video-overlay.active {
+    display: block;
+}
+/* line 117, ../../sass/components/_video-overlay.scss */
+#video-overlay.active .content {
+    -webkit-animation: dropinvideo 1s ease-in-out;
+}
+/* line 122, ../../sass/components/_video-overlay.scss */
+#video-overlay.go-away {
+    -webkit-animation: fadeout 0.5s ease-in-out;
 }
 
 /* line 1, ../../sass/components/_topbar.scss */
@@ -14201,7 +14695,7 @@ button.close {
     background: no-repeat;
     background-position: 0px 4px;
     background-size: 320px 48px;
-    background-image: url("assets/img/mobile/mobile-header-active.png");
+    background-image: url("/etc/designs/vwprototype/assets/img/mobile/mobile-header-active.png");
     cursor: pointer;
 }
 /* line 32, ../../sass/components/_topbar.scss */
@@ -14213,7 +14707,7 @@ button.close {
     height: 41px;
     background: no-repeat;
     background-size: 320px 41px;
-    background-image: url("assets/img/mobile/mobile-menu2_02.png");
+    background-image: url("/etc/designs/vwprototype/assets/img/mobile/mobile-menu2_02.png");
 }
 /* line 44, ../../sass/components/_topbar.scss */
 .topbar #menu-02-fixtop {
@@ -14224,7 +14718,7 @@ button.close {
     height: 49px;
     background: no-repeat;
     background-size: 320px 49px;
-    background-image: url("assets/img/mobile/mobile-menu2_03.png");
+    background-image: url("/etc/designs/vwprototype/assets/img/mobile/mobile-menu2_03.png");
 }
 /* line 55, ../../sass/components/_topbar.scss */
 .topbar .menu-inner {
@@ -14269,7 +14763,7 @@ button.close {
     top: 0px;
     background: white no-repeat;
     background-size: 320px 692px;
-    background-image: url("assets/img/mobile/mobile-menu1_03.png");
+    background-image: url("/etc/designs/vwprototype/assets/img/mobile/mobile-menu1_03.png");
 }
 /* line 98, ../../sass/components/_topbar.scss */
 .topbar .menu-inner .menu .menu-scrollbox .menu-section#menu-02 {
@@ -14279,7 +14773,7 @@ button.close {
     background: white no-repeat;
     background-position: 0px 49px;
     background-size: 320px 548px;
-    background-image: url("assets/img/mobile/mobile-menu2_04.png");
+    background-image: url("/etc/designs/vwprototype/assets/img/mobile/mobile-menu2_04.png");
 }
 /* line 108, ../../sass/components/_topbar.scss */
 .topbar .menu-inner .menu .menu-scrollbox .menu-section .fake-topbar-button {
@@ -14414,11 +14908,11 @@ button.close {
     text-align: center;
     background: no-repeat;
     background-size: 10px 10px;
-    background-image: url("assets/img/carousel1/carousel1-grey-dot.png");
+    background-image: url("/etc/designs/vwprototype/assets/img/carousel1/carousel1-grey-dot.png");
 }
 /* line 80, ../../sass/components/_carousel.scss */
 .mobile-carousel .carousel-nav .carousel-nav-section.active {
-    background-image: url("assets/img/carousel1/carousel1-blue-dot.png");
+    background-image: url("/etc/designs/vwprototype/assets/img/carousel1/carousel1-blue-dot.png");
 }
 /* line 89, ../../sass/components/_carousel.scss */
 .mobile-carousel.ipad {
@@ -14473,30 +14967,39 @@ button.close {
     top: -200px;
     height: 165px;
     background-size: 138px 165px;
-    background-image: url("assets/img/panes/home_uk_mobile_portrait_04.jpg");
+    background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_mobile_portrait_04.jpg");
 }
 /* line 153, ../../sass/components/_carousel.scss */
 .mobile-carousel.iphone#home-02-carousel #section-01 {
     height: 452px;
     background-size: 320px 452px;
-    background-color: #e3ebec;
-    background-image: url("assets/img/carousel1/carousel-home-02-img1.png");
+    background-image: url("/etc/designs/vwprototype/assets/img/carousel1/carousel-home-02-img1.png");
 }
 /* line 160, ../../sass/components/_carousel.scss */
 .mobile-carousel.iphone#home-02-carousel #section-02 {
     height: 452px;
     background-size: 320px 452px;
-    background-color: #ff00ff;
-    background-image: url("assets/img/carousel1/carousel-home-02-img2.png");
+    background-image: url("/etc/designs/vwprototype/assets/img/carousel1/carousel-home-02-img2.png");
 }
 /* line 167, ../../sass/components/_carousel.scss */
 .mobile-carousel.iphone#home-02-carousel #section-03 {
     height: 452px;
     background-size: 320px 452px;
-    background-color: #cc00cc;
-    background-image: url("assets/img/carousel1/carousel-home-02-img3.png");
+    background-image: url("/etc/designs/vwprototype/assets/img/carousel1/carousel-home-02-img3.png");
 }
 /* line 174, ../../sass/components/_carousel.scss */
+.mobile-carousel.iphone#home-02-carousel #section-04 {
+    height: 452px;
+    background-size: 320px 452px;
+    background-image: url("/etc/designs/vwprototype/assets/img/carousel1/carousel-home-02-img4.png");
+}
+/* line 181, ../../sass/components/_carousel.scss */
+.mobile-carousel.iphone#home-02-carousel #section-05 {
+    height: 452px;
+    background-size: 320px 452px;
+    background-image: url("/etc/designs/vwprototype/assets/img/carousel1/carousel-home-02-img5.png");
+}
+/* line 188, ../../sass/components/_carousel.scss */
 .mobile-carousel.iphone#home-02-carousel #home-02-topbar {
     position: absolute;
     left: 0px;
@@ -14505,54 +15008,77 @@ button.close {
     height: 68px;
     background: no-repeat;
     background-size: 320px 67px;
-    background-image: url("assets/img/carousel1/carousel1-topbar.png");
+    background-image: url("/etc/designs/vwprototype/assets/img/carousel1/carousel1-topbar.png");
     z-index: 9;
     -webkit-transform: translate3d(0, 0, 0);
     overflow: hidden;
 }
-/* line 187, ../../sass/components/_carousel.scss */
+/* line 201, ../../sass/components/_carousel.scss */
 .mobile-carousel.iphone#home-02-carousel #home-02-topbar .topbar-inner {
     position: absolute;
-    left: 110px;
-    top: 20px;
-    width: 378px;
-    height: 20px;
+    left: 0;
+    top: 15px;
+    width: 880px;
+    height: 39px;
+    padding-left: 81px;
 }
-/* line 196, ../../sass/components/_carousel.scss */
+/* line 209, ../../sass/components/_carousel.scss */
 .mobile-carousel.iphone#home-02-carousel #home-02-topbar .topbar-inner .topbar-img {
     display: inline-block;
     position: relative;
     opacity: 0.3;
 }
-/* line 201, ../../sass/components/_carousel.scss */
+/* line 214, ../../sass/components/_carousel.scss */
 .mobile-carousel.iphone#home-02-carousel #home-02-topbar .topbar-inner .topbar-img#topbar-img1 {
-    width: 117px;
-    height: 20px;
+    width: 158px;
+    height: 32px;
     background: no-repeat;
-    background-size: 117px 20px;
-    background-image: url("assets/img/carousel1/carousel1-title_01.png");
+    background-size: 106px 20px;
+    background-image: url("/etc/designs/vwprototype/assets/img/carousel1/carousel1-title_01.png");
+    background-position: center center;
 }
-/* line 209, ../../sass/components/_carousel.scss */
+/* line 223, ../../sass/components/_carousel.scss */
 .mobile-carousel.iphone#home-02-carousel #home-02-topbar .topbar-inner .topbar-img#topbar-img2 {
-    width: 157px;
-    height: 20px;
+    width: 164px;
+    height: 32px;
+    background-position: center center;
     background: no-repeat;
-    background-size: 157px 20px;
-    background-image: url("assets/img/carousel1/carousel1-title_02.png");
+    background-size: 120px 20px;
+    background-image: url("/etc/designs/vwprototype/assets/img/carousel1/carousel1-title_02.png");
+    background-position: center center;
 }
-/* line 217, ../../sass/components/_carousel.scss */
+/* line 233, ../../sass/components/_carousel.scss */
 .mobile-carousel.iphone#home-02-carousel #home-02-topbar .topbar-inner .topbar-img#topbar-img3 {
-    width: 95px;
-    height: 20px;
+    width: 111px;
+    height: 32px;
     background: no-repeat;
-    background-size: 95px 20px;
-    background-image: url("assets/img/carousel1/carousel1-title_03.png");
+    background-size: 69px 20px;
+    background-image: url("/etc/designs/vwprototype/assets/img/carousel1/carousel1-title_03.png");
+    background-position: center center;
 }
-/* line 225, ../../sass/components/_carousel.scss */
+/* line 243, ../../sass/components/_carousel.scss */
+.mobile-carousel.iphone#home-02-carousel #home-02-topbar .topbar-inner .topbar-img#topbar-img4 {
+    width: 104px;
+    height: 32px;
+    background: no-repeat;
+    background-size: 62px 20px;
+    background-image: url("/etc/designs/vwprototype/assets/img/carousel1/carousel1-title_04.png");
+    background-position: center center;
+}
+/* line 252, ../../sass/components/_carousel.scss */
+.mobile-carousel.iphone#home-02-carousel #home-02-topbar .topbar-inner .topbar-img#topbar-img5 {
+    width: 198px;
+    height: 32px;
+    background: no-repeat;
+    background-size: 156px 32px;
+    background-image: url("/etc/designs/vwprototype/assets/img/carousel1/carousel1-title_05.png");
+    background-position: center center;
+}
+/* line 261, ../../sass/components/_carousel.scss */
 .mobile-carousel.iphone#home-02-carousel #home-02-topbar .topbar-inner .topbar-img.active {
     opacity: 1;
 }
-/* line 232, ../../sass/components/_carousel.scss */
+/* line 268, ../../sass/components/_carousel.scss */
 .mobile-carousel.iphone#home-02-carousel #home-02-fakebutton {
     position: absolute;
     width: 251px;
@@ -14561,18 +15087,18 @@ button.close {
     top: 345px;
     background: no-repeat;
     background-size: 251px 50px;
-    background-image: url("assets/img/carousel1/carousel1-button.png");
+    background-image: url("/etc/designs/vwprototype/assets/img/carousel1/carousel1-button.png");
     -webkit-transform: translate3d(0, 0, 0);
     z-index: 9;
 }
-/* line 245, ../../sass/components/_carousel.scss */
+/* line 281, ../../sass/components/_carousel.scss */
 .mobile-carousel.iphone#home-02-carousel .carousel-nav {
-    width: 56px;
+    width: 80px;
     z-index: 9;
-    left: 140px;
+    left: 128px;
     bottom: 250px;
 }
-/* line 251, ../../sass/components/_carousel.scss */
+/* line 287, ../../sass/components/_carousel.scss */
 .mobile-carousel.iphone#home-02-carousel .carousel-nav .carousel-nav-section {
     padding: 6px;
 }
@@ -14593,7 +15119,7 @@ button.close {
         width: 1024px;
         height: 41px;
         background-size: 1024px 45px;
-        background-image: url("assets/img/carousel1-tablet/carousel-tablet-topbar-bg.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/carousel-tablet-topbar-bg.png");
         z-index: 9;
     }
     /* line 24, ../../sass/components/_carousel-tablet.scss */
@@ -14607,35 +15133,35 @@ button.close {
         left: 0px;
         width: 200px;
         background-size: 200px 41px;
-        background-image: url("assets/img/carousel1-tablet/carousel-tablet-topbar-txt_01.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/carousel-tablet-topbar-txt_01.png");
     }
     /* line 37, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-topbar .img-section#carousel-tablet-img-02 {
         left: 200px;
         width: 227px;
         background-size: 227px 41px;
-        background-image: url("assets/img/carousel1-tablet/carousel-tablet-topbar-txt_02.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/carousel-tablet-topbar-txt_02.png");
     }
     /* line 44, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-topbar .img-section#carousel-tablet-img-03 {
         left: 427px;
         width: 196px;
         background-size: 196px 41px;
-        background-image: url("assets/img/carousel1-tablet/carousel-tablet-topbar-txt_03.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/carousel-tablet-topbar-txt_03.png");
     }
     /* line 51, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-topbar .img-section#carousel-tablet-img-04 {
         left: 623px;
         width: 227px;
         background-size: 227px 41px;
-        background-image: url("assets/img/carousel1-tablet/carousel-tablet-topbar-txt_04.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/carousel-tablet-topbar-txt_04.png");
     }
     /* line 58, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-topbar .img-section#carousel-tablet-img-05 {
         left: 850px;
         width: 172px;
         background-size: 172px 41px;
-        background-image: url("assets/img/carousel1-tablet/carousel-tablet-topbar-txt_05.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/carousel-tablet-topbar-txt_05.png");
     }
     /* line 67, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel #carousel-pointer {
@@ -14644,7 +15170,7 @@ button.close {
         width: 17px;
         height: 9px;
         background-size: 17px 9px;
-        background-image: url("assets/img/carousel1-tablet/carousel-tablet-topbar-pointer.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/carousel-tablet-topbar-pointer.png");
     }
     /* line 81, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-bg {
@@ -14674,27 +15200,27 @@ button.close {
     /* line 104, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-bg .carousel-inner .img-section#carousel-tablet-bg-img-01 {
         -webkit-transform: translate3d(0, 0, 0);
-        background-image: url("assets/img/carousel1-tablet/home-02-section-00.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/home-02-section-00.png");
     }
     /* line 110, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-bg .carousel-inner .img-section#carousel-tablet-bg-img-02 {
         -webkit-transform: translate3d(0, 0, 0);
-        background-image: url("assets/img/carousel1-tablet/home-02-section-01.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/home-02-section-01.png");
     }
     /* line 115, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-bg .carousel-inner .img-section#carousel-tablet-bg-img-03 {
         -webkit-transform: translate3d(0, 0, 0);
-        background-image: url("assets/img/carousel1-tablet/home-02-section-02.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/home-02-section-02.png");
     }
     /* line 120, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-bg .carousel-inner .img-section#carousel-tablet-bg-img-04 {
         -webkit-transform: translate3d(0, 0, 0);
-        background-image: url("assets/img/carousel1-tablet/home-02-section-03.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/home-02-section-03.png");
     }
     /* line 125, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-bg .carousel-inner .img-section#carousel-tablet-bg-img-05 {
         -webkit-transform: translate3d(0, 0, 0);
-        background-image: url("assets/img/carousel1-tablet/home-02-section-04.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/home-02-section-04.png");
     }
 }
 @media (max-width: 768px) and (min-width: 320px) {
@@ -14713,7 +15239,7 @@ button.close {
         width: 768px;
         height: 71px;
         background-size: 768px 71px;
-        background-image: url("assets/img/carousel1-tablet/carousel-tablet-topbar-bg.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/carousel-tablet-topbar-bg.png");
         z-index: 9;
     }
     /* line 157, ../../sass/components/_carousel-tablet.scss */
@@ -14727,35 +15253,35 @@ button.close {
         left: 0px;
         width: 173px;
         background-size: 173px 71px;
-        background-image: url("assets/img/carousel1-tablet/carousel-tablet-topbar-portrait-txt_01.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/carousel-tablet-topbar-portrait-txt_01.png");
     }
     /* line 170, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-topbar .img-section#carousel-tablet-img-02 {
         left: 200px;
         width: 165px;
         background-size: 165px 71px;
-        background-image: url("assets/img/carousel1-tablet/carousel-tablet-topbar-portrait-txt_02.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/carousel-tablet-topbar-portrait-txt_02.png");
     }
     /* line 177, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-topbar .img-section#carousel-tablet-img-03 {
         left: 427px;
         width: 126px;
         background-size: 126px 71px;
-        background-image: url("assets/img/carousel1-tablet/carousel-tablet-topbar-portrait-txt_03.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/carousel-tablet-topbar-portrait-txt_03.png");
     }
     /* line 184, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-topbar .img-section#carousel-tablet-img-04 {
         left: 623px;
         width: 139px;
         background-size: 139px 71px;
-        background-image: url("assets/img/carousel1-tablet/carousel-tablet-topbar-portrait-txt_04.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/carousel-tablet-topbar-portrait-txt_04.png");
     }
     /* line 191, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-topbar .img-section#carousel-tablet-img-05 {
         left: 850px;
         width: 164px;
         background-size: 164px 71px;
-        background-image: url("assets/img/carousel1-tablet/carousel-tablet-topbar-portrait-txt_05.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/carousel-tablet-topbar-portrait-txt_05.png");
     }
     /* line 200, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel #carousel-pointer {
@@ -14764,7 +15290,7 @@ button.close {
         width: 17px;
         height: 9px;
         background-size: 17px 9px;
-        background-image: url("assets/img/carousel1-tablet/carousel-tablet-topbar-pointer.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/carousel-tablet-topbar-pointer.png");
     }
     /* line 214, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-bg {
@@ -14794,27 +15320,27 @@ button.close {
     /* line 237, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-bg .carousel-inner .img-section#carousel-tablet-bg-img-01 {
         -webkit-transform: translate3d(0, 0, 0);
-        background-image: url("assets/img/carousel1-tablet/home-02-portrait-section-00.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/home-02-portrait-section-00.png");
     }
     /* line 243, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-bg .carousel-inner .img-section#carousel-tablet-bg-img-02 {
         -webkit-transform: translate3d(0, 0, 0);
-        background-image: url("assets/img/carousel1-tablet/home-02-portrait-section-01.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/home-02-portrait-section-01.png");
     }
     /* line 248, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-bg .carousel-inner .img-section#carousel-tablet-bg-img-03 {
         -webkit-transform: translate3d(0, 0, 0);
-        background-image: url("assets/img/carousel1-tablet/home-02-portrait-section-02.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/home-02-portrait-section-02.png");
     }
     /* line 253, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-bg .carousel-inner .img-section#carousel-tablet-bg-img-04 {
         -webkit-transform: translate3d(0, 0, 0);
-        background-image: url("assets/img/carousel1-tablet/home-02-portrait-section-03.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/home-02-portrait-section-03.png");
     }
     /* line 258, ../../sass/components/_carousel-tablet.scss */
     #tablet-carousel .carousel-bg .carousel-inner .img-section#carousel-tablet-bg-img-05 {
         -webkit-transform: translate3d(0, 0, 0);
-        background-image: url("assets/img/carousel1-tablet/home-02-portrait-section-04.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/carousel1-tablet/home-02-portrait-section-04.png");
     }
 }
 /* line 1, ../../sass/views/_viewport.scss */
@@ -14838,57 +15364,54 @@ button.close {
     max-width: 1440px;
     overflow: auto;
 }
-@media (max-width: 320px) {
+@media (min-width: 1025px) {
     /* line 8, ../../sass/views/_viewport.scss */
     #site-wrapper #viewport {
-        padding: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        top: 50px;
+        width: 1440px;
     }
 }
-/* line 26, ../../sass/views/_viewport.scss */
+/* line 23, ../../sass/views/_viewport.scss */
 #site-wrapper #viewport.iphone {
     top: 0px;
 }
-/* line 30, ../../sass/views/_viewport.scss */
+/* line 27, ../../sass/views/_viewport.scss */
 #site-wrapper #viewport.ipad {
     top: 70px;
 }
-/* line 36, ../../sass/views/_viewport.scss */
+/* line 33, ../../sass/views/_viewport.scss */
 #site-wrapper.align-left #viewport {
     padding-left: 173px;
 }
-/* line 40, ../../sass/views/_viewport.scss */
+/* line 37, ../../sass/views/_viewport.scss */
 #site-wrapper.align-right #viewport {
     padding-right: 173px;
 }
-/* line 48, ../../sass/views/_viewport.scss */
+/* line 45, ../../sass/views/_viewport.scss */
 #site-wrapper.menu-visible.align-left .navigation {
     left: 0;
 }
-/* line 52, ../../sass/views/_viewport.scss */
+/* line 49, ../../sass/views/_viewport.scss */
 #site-wrapper.menu-visible.align-left #viewport {
     left: 400px;
     right: -400px;
     padding-left: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
     @-webkit-keyframes slideshow {
         /* line 4, ../../sass/views/_home.scss */
         0% {
-            background-image: url("assets/img/panes/home_uk_desktop_04_a.jpg");
+            background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_desktop_04_a.jpg");
         }
 
         /* line 5, ../../sass/views/_home.scss */
         33.3% {
-            background-image: url("assets/img/panes/home_uk_desktop_04_b.jpg");
+            background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_desktop_04_b.jpg");
         }
 
         /* line 6, ../../sass/views/_home.scss */
         66.6% {
-            background-image: url("assets/img/panes/home_uk_desktop_04_c.jpg");
+            background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_desktop_04_c.jpg");
         }
     }
 }
@@ -14896,17 +15419,17 @@ button.close {
     @-webkit-keyframes slideshow {
         /* line 13, ../../sass/views/_home.scss */
         0% {
-            background-image: url("assets/img/panes/home_uk_tablet_landscape_04_a.jpg");
+            background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_tablet_landscape_04_a.jpg");
         }
 
         /* line 14, ../../sass/views/_home.scss */
         33.3% {
-            background-image: url("assets/img/panes/home_uk_tablet_landscape_04_b.jpg");
+            background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_tablet_landscape_04_b.jpg");
         }
 
         /* line 15, ../../sass/views/_home.scss */
         66.6% {
-            background-image: url("assets/img/panes/home_uk_tablet_landscape_04_c.jpg");
+            background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_tablet_landscape_04_c.jpg");
         }
     }
 }
@@ -14914,17 +15437,17 @@ button.close {
     @-webkit-keyframes slideshow {
         /* line 22, ../../sass/views/_home.scss */
         0% {
-            background-image: url("assets/img/panes/home_uk_tablet_portrait_04_a.jpg");
+            background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_tablet_portrait_04_a.jpg");
         }
 
         /* line 23, ../../sass/views/_home.scss */
         33.3% {
-            background-image: url("assets/img/panes/home_uk_tablet_portrait_04_b.jpg");
+            background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_tablet_portrait_04_b.jpg");
         }
 
         /* line 24, ../../sass/views/_home.scss */
         66.6% {
-            background-image: url("assets/img/panes/home_uk_tablet_portrait_04_c.jpg");
+            background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_tablet_portrait_04_c.jpg");
         }
     }
 }
@@ -14932,229 +15455,246 @@ button.close {
     @-webkit-keyframes slideshow {
         /* line 31, ../../sass/views/_home.scss */
         0% {
-            background-image: url("assets/img/panes/home_uk_mobile_portrait_04_a.jpg");
+            background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_mobile_portrait_04_a.jpg");
         }
 
         /* line 32, ../../sass/views/_home.scss */
         33.3% {
-            background-image: url("assets/img/panes/home_uk_mobile_portrait_04_b.jpg");
+            background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_mobile_portrait_04_b.jpg");
         }
 
         /* line 33, ../../sass/views/_home.scss */
         66.6% {
-            background-image: url("assets/img/panes/home_uk_mobile_portrait_04_c.jpg");
+            background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_mobile_portrait_04_c.jpg");
         }
     }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
     /* line 42, ../../sass/views/_home.scss */
     .uk #home-01 {
         height: 749px;
-        background-image: url("assets/img/panes/home_uk_desktop_01.jpg");
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_desktop_01.jpg");
     }
     /* line 47, ../../sass/views/_home.scss */
     .uk #home-02 {
-        height: 313px;
-        background-image: url("assets/img/panes/home_uk_desktop_02.jpg");
+        height: 354px;
+        background-color: #e3ebec;
     }
     /* line 52, ../../sass/views/_home.scss */
     .uk #home-03 {
         height: 550px;
-        background-image: url("assets/img/panes/home_uk_desktop_03.jpg");
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_desktop_03.jpg");
     }
-    /* line 57, ../../sass/views/_home.scss */
-    .uk #home-04 {
-        height: 647px;
-        background-image: url("assets/img/panes/home_uk_desktop_04_a.jpg");
-        -webkit-animation: slideshow 6s ease-in-out infinite;
+    /* line 56, ../../sass/views/_home.scss */
+    .uk #home-03 #open-video-overlay {
+        width: 170px;
+        left: 77px;
+        top: 331px;
     }
     /* line 63, ../../sass/views/_home.scss */
+    .uk #home-04 {
+        height: 647px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_desktop_04_a.jpg");
+        -webkit-animation: slideshow 3s ease-in-out infinite;
+    }
+    /* line 69, ../../sass/views/_home.scss */
     .uk #home-05 {
         height: 479px;
-        background-image: url("assets/img/panes/home_uk_desktop_05.jpg");
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_desktop_05.jpg");
     }
-    /* line 68, ../../sass/views/_home.scss */
+    /* line 74, ../../sass/views/_home.scss */
     .uk #home-06 {
-        height: 450px;
-        background-image: url("assets/img/panes/home_uk_desktop_06.jpg");
+        height: 540px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_desktop_06.jpg");
     }
-    /* line 73, ../../sass/views/_home.scss */
+    /* line 79, ../../sass/views/_home.scss */
     .uk #home-07 {
-        height: 853px;
-        background-image: url("assets/img/panes/home_uk_desktop_07.jpg");
+        height: 1079px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_desktop_07.jpg");
     }
 }
 @media (max-width: 1024px) and (min-width: 768px) {
-    /* line 82, ../../sass/views/_home.scss */
+    /* line 88, ../../sass/views/_home.scss */
     .uk #home-01 {
         height: 768px;
         background-size: 1024px 798px;
         background-position: 0 -12px;
-        background-image: url("assets/img/panes/home_uk_tablet_landscape_01.jpg");
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_tablet_landscape_01.jpg");
     }
-    /* line 89, ../../sass/views/_home.scss */
+    /* line 95, ../../sass/views/_home.scss */
     .uk #home-02 {
         height: 273px;
     }
-    /* line 93, ../../sass/views/_home.scss */
+    /* line 99, ../../sass/views/_home.scss */
     .uk #home-03 {
         height: 522px;
         background-size: 1024px 522px;
-        background-image: url("assets/img/panes/home_uk_tablet_landscape_03.jpg");
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_tablet_landscape_03.jpg");
     }
-    /* line 99, ../../sass/views/_home.scss */
+    /* line 104, ../../sass/views/_home.scss */
+    .uk #home-03 #open-video-overlay {
+        width: 140px;
+        left: 180px;
+        top: 314px;
+    }
+    /* line 111, ../../sass/views/_home.scss */
     .uk #home-04 {
         height: 589px;
         background-size: 1024px 589px;
-        background-image: url("assets/img/panes/home_uk_tablet_landscape_04_a.jpg");
-        -webkit-animation: slideshow 6s ease-in-out infinite;
-    }
-    /* line 106, ../../sass/views/_home.scss */
-    .uk #home-05 {
-        height: 529px;
-        background-size: 1024px 529px;
-        background-image: url("assets/img/panes/home_uk_tablet_landscape_05.jpg");
-    }
-    /* line 112, ../../sass/views/_home.scss */
-    .uk #home-06 {
-        height: 542px;
-        background-size: 1024px 542px;
-        background-image: url("assets/img/panes/home_uk_tablet_landscape_06.jpg");
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_tablet_landscape_04_a.jpg");
+        -webkit-animation: slideshow 3s ease-in-out infinite;
     }
     /* line 118, ../../sass/views/_home.scss */
+    .uk #home-05 {
+        height: 423px;
+        background-size: 1024px 423px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_tablet_landscape_05.jpg");
+    }
+    /* line 124, ../../sass/views/_home.scss */
+    .uk #home-06 {
+        height: 486px;
+        background-size: 1024px 486px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_tablet_landscape_06.jpg");
+    }
+    /* line 130, ../../sass/views/_home.scss */
     .uk #home-07 {
-        height: 696px;
-        background-size: 1024px 696px;
-        background-image: url("assets/img/panes/home_uk_tablet_landscape_07.jpg");
+        height: 809px;
+        background-size: 1024px 809px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_tablet_landscape_07.jpg");
     }
 }
 @media (max-width: 768px) and (min-width: 320px) {
-    /* line 129, ../../sass/views/_home.scss */
+    /* line 141, ../../sass/views/_home.scss */
     .uk #home-01 {
         height: 1024px;
         background-size: 768px 1162px;
         background-position: top left;
-        background-image: url("assets/img/panes/home_uk_tablet_portrait_01.jpg");
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_tablet_portrait_01.jpg");
     }
-    /* line 136, ../../sass/views/_home.scss */
+    /* line 148, ../../sass/views/_home.scss */
     .uk #home-02 {
         height: 344px;
     }
-    /* line 140, ../../sass/views/_home.scss */
+    /* line 152, ../../sass/views/_home.scss */
     .uk #home-03 {
-        height: 389px;
+        height: 398px;
         background-size: 768px 398px;
-        background-image: url("assets/img/panes/home_uk_tablet_portrait_03.jpg");
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_tablet_portrait_03.jpg");
     }
-    /* line 146, ../../sass/views/_home.scss */
+    /* line 157, ../../sass/views/_home.scss */
+    .uk #home-03 #open-video-overlay {
+        width: 150px;
+        left: 180px;
+        top: 247px;
+    }
+    /* line 164, ../../sass/views/_home.scss */
     .uk #home-04 {
         height: 577px;
         background-size: 768px 577px;
-        background-image: url("assets/img/panes/home_uk_tablet_portrait_04_a.jpg");
-        -webkit-animation: slideshow 6s ease-in-out infinite;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_tablet_portrait_04_a.jpg");
+        -webkit-animation: slideshow 3s ease-in-out infinite;
     }
-    /* line 153, ../../sass/views/_home.scss */
+    /* line 171, ../../sass/views/_home.scss */
     .uk #home-05 {
-        height: 369px;
-        background-size: 768px 369px;
-        background-image: url("assets/img/panes/home_uk_tablet_portrait_05.jpg");
+        height: 328px;
+        background-size: 768px 328px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_tablet_portrait_05.jpg");
     }
-    /* line 159, ../../sass/views/_home.scss */
+    /* line 177, ../../sass/views/_home.scss */
     .uk #home-06 {
-        height: 413px;
-        background-size: 768px 413px;
-        background-image: url("assets/img/panes/home_uk_tablet_portrait_06.jpg");
+        height: 365px;
+        background-size: 768px 365px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_tablet_portrait_06.jpg");
     }
-    /* line 165, ../../sass/views/_home.scss */
+    /* line 183, ../../sass/views/_home.scss */
     .uk #home-07 {
-        height: 646px;
-        background-size: 768px 646px;
-        background-image: url("assets/img/panes/home_uk_tablet_portrait_07.jpg");
+        height: 765px;
+        background-size: 768px 765px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_tablet_portrait_07.jpg");
     }
 }
 @media (max-width: 320px) {
-    /* line 175, ../../sass/views/_home.scss */
+    /* line 193, ../../sass/views/_home.scss */
     .uk #home-01 {
         height: 568px;
         background-size: 320px 568px;
-        background-image: url("assets/img/panes/home_uk_mobile_portrait_01.jpg");
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_mobile_portrait_01.jpg");
     }
-    /* line 181, ../../sass/views/_home.scss */
+    /* line 199, ../../sass/views/_home.scss */
     .uk #home-02 {
         height: 452px;
-        background-size: 320px 452px;
-        background-image: url("assets/img/panes/home_uk_mobile_portrait_02.jpg");
     }
-    /* line 187, ../../sass/views/_home.scss */
+    /* line 203, ../../sass/views/_home.scss */
     .uk #home-03 {
-        height: 355px;
-        background-size: 320px 355px;
-        background-image: url("assets/img/panes/home_uk_mobile_portrait_03.jpg");
+        height: 356px;
+        background-size: 320px 356px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_mobile_portrait_03.jpg");
     }
-    /* line 193, ../../sass/views/_home.scss */
+    /* line 208, ../../sass/views/_home.scss */
+    .uk #home-03 #open-video-overlay {
+        width: 276px;
+        height: 165px;
+        right: 22px;
+        top: 158px;
+    }
+    /* line 216, ../../sass/views/_home.scss */
     .uk #home-04 {
         height: 376px;
         background-size: 320px 376px;
-        background-image: url("assets/img/panes/home_uk_mobile_portrait_04.jpg");
-        -webkit-animation: slideshow 6s ease-in-out infinite;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_mobile_portrait_04_a.jpg");
+        -webkit-animation: slideshow 3s ease-in-out infinite;
     }
-    /* line 200, ../../sass/views/_home.scss */
+    /* line 223, ../../sass/views/_home.scss */
     .uk #home-05 {
         height: 309px;
         background-size: 320px 309px;
-        background-image: url("assets/img/panes/home_uk_mobile_portrait_05.jpg");
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_mobile_portrait_05.jpg");
     }
-    /* line 206, ../../sass/views/_home.scss */
+    /* line 229, ../../sass/views/_home.scss */
     .uk #home-06 {
         height: 376px;
         background-size: 320px 376px;
-        background-image: url("assets/img/panes/home_uk_mobile_portrait_06.jpg");
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_mobile_portrait_06.jpg");
     }
-    /* line 213, ../../sass/views/_home.scss */
+    /* line 236, ../../sass/views/_home.scss */
     .uk #home-07 {
-        height: 417px;
-        background-size: 320px 417px;
-        background-image: url("assets/img/panes/home_uk_mobile_portrait_07.jpg");
+        height: 494px;
+        background-size: 320px 494px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/home_uk_mobile_portrait_07.jpg");
     }
 }
 
-@media (max-width: 480px) {
-    /* line 226, ../../sass/views/_home.scss */
-    .china #home-01 {
-        height: 334px;
-        background-size: 320px 334px;
-        background-image: url("assets/img/panes/home_china_mobile_portrait_01.jpg");
+@media (min-width: 1024px) {
+    /* line 1, ../../sass/views/_configurator.scss */
+    .uk #config-01 {
+        height: 749px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/configurator_desktop.jpg");
     }
-    /* line 232, ../../sass/views/_home.scss */
-    .china #home-02 {
-        height: 330px;
-        background-size: 320px 334px;
-        background-image: url("assets/img/panes/home_china_mobile_portrait_02.jpg");
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+    /* line 1, ../../sass/views/_configurator.scss */
+    .uk #config-01 {
+        height: 768px;
+        background-size: 1024px 798px;
+        background-position: 0 -12px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/configurator_tablet_landscape.jpg");
     }
-    /* line 238, ../../sass/views/_home.scss */
-    .china #home-03 {
-        height: 280px;
-        background-size: 320px 280px;
-        background-image: url("assets/img/panes/home_china_mobile_portrait_03.jpg");
+}
+@media (max-width: 768px) and (min-width: 320px) {
+    /* line 1, ../../sass/views/_configurator.scss */
+    .uk #config-01 {
+        height: 1024px;
+        background-size: 768px 1162px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/configurator_tablet_portrait.jpg");
     }
-    /* line 244, ../../sass/views/_home.scss */
-    .china #home-04 {
-        height: 220px;
-        background-size: 320px 220px;
-        background-image: url("assets/img/panes/home_china_mobile_portrait_04.jpg");
-        -webkit-animation: slideshow 6s ease-in-out infinite;
-    }
-    /* line 251, ../../sass/views/_home.scss */
-    .china #home-05 {
-        height: 220px;
-        background-size: 320px 220px;
-        background-image: url("assets/img/panes/home_china_mobile_portrait_05.jpg");
-    }
-    /* line 257, ../../sass/views/_home.scss */
-    .china #home-06 {
-        height: 180px;
-        background-size: 320px 180px;
-        background-image: url("assets/img/panes/home_china_mobile_portrait_06.jpg");
+}
+@media (max-width: 320px) {
+    /* line 1, ../../sass/views/_configurator.scss */
+    .uk #config-01 {
+        height: 828px;
+        background-size: 320px 828px;
+        background-position: 0 18px;
+        background-image: url("/etc/designs/vwprototype/assets/img/panes/configurator_mobile.jpg");
     }
 }
 
@@ -15214,7 +15754,7 @@ button.close {
     top: 108px;
     left: 0px;
     z-index: 1;
-    background-image: url("assets/img/wobblies/heading-desktop.png");
+    background-image: url("/etc/designs/vwprototype/assets/img/wobblies/heading-desktop.png");
 }
 /* line 44, ../../sass/components/_wobblies.scss */
 .wobblies .tweet {
@@ -15224,16 +15764,16 @@ button.close {
     left: 572px;
     -webkit-transition-end: opacity 1;
     z-index: 3;
-    background-image: url("assets/img/wobblies/tweet-desktop.png");
+    background-image: url("/etc/designs/vwprototype/assets/img/wobblies/tweet-desktop.png");
 }
 /* line 54, ../../sass/components/_wobblies.scss */
 .wobblies .text {
     width: 725px;
     height: 264px;
     top: 390px;
-    left: 77px;
+    left: 30px;
     z-index: 1;
-    background-image: url("assets/img/wobblies/text-desktop.png");
+    background-image: url("/etc/designs/vwprototype/assets/img/wobblies/text-desktop.png");
 }
 @media (max-width: 1024px) and (min-width: 768px) {
     /* line 1, ../../sass/components/_wobblies.scss */
@@ -15248,48 +15788,48 @@ button.close {
         top: 167px;
         left: 0px;
         background-size: 603px 205px;
-        background-image: url("assets/img/wobblies/heading-tablet-landscape.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/wobblies/heading-tablet-landscape.png");
     }
     /* line 77, ../../sass/components/_wobblies.scss */
     .wobblies .tweet {
-        width: 308px;
+        width: 304px;
         height: 106px;
         top: 132px;
         left: 474px;
-        background-size: 308px 106px;
-        background-image: url("assets/img/wobblies/tweet-tablet-landscape.png");
+        background-size: 304px 106px;
+        background-image: url("/etc/designs/vwprototype/assets/img/wobblies/tweet-tablet-landscape.png");
     }
     /* line 86, ../../sass/components/_wobblies.scss */
     .wobblies .text {
         width: 725px;
         height: 264px;
         top: 393px;
-        left: 65px;
-        background-size: 215px 121px;
-        background-image: url("assets/img/wobblies/text-tablet-landscape.png");
+        left: 26px;
+        background-size: 273px 148px;
+        background-image: url("/etc/designs/vwprototype/assets/img/wobblies/text-tablet-landscape.png");
     }
 }
 @media (max-width: 768px) and (min-width: 320px) {
     /* line 1, ../../sass/components/_wobblies.scss */
     .wobblies {
-        margin-left: 154px;
-        width: 614px;
+        margin-left: 163px;
+        width: 605px;
     }
     /* line 103, ../../sass/components/_wobblies.scss */
     .wobblies .heading {
         width: 582px;
-        height: 196px;
-        background-size: 582px 196px;
-        background-image: url("assets/img/wobblies/heading-tablet-portrait.png");
+        height: 198px;
+        background-size: 582px 198px;
+        background-image: url("/etc/designs/vwprototype/assets/img/wobblies/heading-tablet-portrait.png");
         left: 0;
         top: 222px;
     }
     /* line 112, ../../sass/components/_wobblies.scss */
     .wobblies .text {
-        width: 244px;
-        height: 121px;
-        background-size: 211px 121px;
-        background-image: url("assets/img/wobblies/text-tablet-portrait.png");
+        width: 325px;
+        height: 147px;
+        background-size: 325px 147px;
+        background-image: url("/etc/designs/vwprototype/assets/img/wobblies/text-tablet-portrait.png");
         left: 0;
         top: 440px;
     }
@@ -15298,7 +15838,7 @@ button.close {
         width: 304px;
         height: 106px;
         background-size: 304px 106px;
-        background-image: url("assets/img/wobblies/tweet-tablet-portrait.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/wobblies/tweet-tablet-portrait.png");
         top: 124px;
         left: 277px;
     }
@@ -15314,7 +15854,7 @@ button.close {
         width: 278px;
         height: 94px;
         background-size: 278px 94px;
-        background-image: url("assets/img/wobblies/heading-mobile-portrait.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/wobblies/heading-mobile-portrait.png");
         left: 0;
         top: 190px;
     }
@@ -15323,7 +15863,7 @@ button.close {
         width: 277px;
         height: 90px;
         background-size: 277px 90px;
-        background-image: url("assets/img/wobblies/tweet-mobile-portrait.png");
+        background-image: url("/etc/designs/vwprototype/assets/img/wobblies/tweet-mobile-portrait.png");
         top: 104px;
         left: 0px;
     }
@@ -15337,7 +15877,7 @@ button.close {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
     @-webkit-keyframes heading-in {
         /* line 170, ../../sass/components/_wobblies.scss */
         0% {
@@ -15360,14 +15900,14 @@ button.close {
 
         /* line 176, ../../sass/components/_wobblies.scss */
         30% {
-            left: 0px;
+            left: -60px;
             opacity: 0;
         }
 
         /* line 177, ../../sass/components/_wobblies.scss */
         80% {
             opacity: 1;
-            left: 77px;
+            left: 30px;
         }
     }
 
@@ -15413,7 +15953,7 @@ button.close {
         }
     }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 768px) {
     @-webkit-keyframes heading-in {
         /* line 194, ../../sass/components/_wobblies.scss */
         0% {
@@ -15436,14 +15976,14 @@ button.close {
 
         /* line 200, ../../sass/components/_wobblies.scss */
         30% {
-            left: -60px;
+            left: -25px;
             opacity: 0;
         }
 
         /* line 201, ../../sass/components/_wobblies.scss */
         80% {
             opacity: 1;
-            left: 0;
+            left: 26px;
         }
     }
 
@@ -15489,77 +16029,15 @@ button.close {
         }
     }
 }
-@media (max-width: 1024px) and (min-width: 768px) {
-    @-webkit-keyframes textin {
-        /* line 218, ../../sass/components/_wobblies.scss */
-        0% {
-            opacity: 0;
-        }
-
-        /* line 219, ../../sass/components/_wobblies.scss */
-        30% {
-            left: 5px;
-            opacity: 0;
-        }
-
-        /* line 220, ../../sass/components/_wobblies.scss */
-        80% {
-            opacity: 1;
-            left: 65px;
-        }
-    }
-
-    @-webkit-keyframes tweet-in {
-        /* line 224, ../../sass/components/_wobblies.scss */
-        0% {
-            opacity: 0;
-        }
-
-        /* line 225, ../../sass/components/_wobblies.scss */
-        80% {
-            opacity: 0;
-            top: 167px;
-        }
-
-        /* line 226, ../../sass/components/_wobblies.scss */
-        90% {
-            opacity: 1;
-            top: 114px;
-        }
-
-        /* line 227, ../../sass/components/_wobblies.scss */
-        92% {
-            opacity: 1;
-            top: 129px;
-        }
-
-        /* line 228, ../../sass/components/_wobblies.scss */
-        92% {
-            opacity: 1;
-            top: 119px;
-        }
-
-        /* line 229, ../../sass/components/_wobblies.scss */
-        94% {
-            opacity: 1;
-            top: 127px;
-        }
-
-        /* line 230, ../../sass/components/_wobblies.scss */
-        100% {
-            top: 124px;
-        }
-    }
-}
 @media (max-width: 768px) and (min-width: 320px) {
     @-webkit-keyframes heading-in {
-        /* line 237, ../../sass/components/_wobblies.scss */
+        /* line 218, ../../sass/components/_wobblies.scss */
         0% {
             opacity: 0;
             left: -60px;
         }
 
-        /* line 238, ../../sass/components/_wobblies.scss */
+        /* line 219, ../../sass/components/_wobblies.scss */
         50% {
             opacity: 1;
             left: 0px;
@@ -15567,18 +16045,18 @@ button.close {
     }
 
     @-webkit-keyframes textin {
-        /* line 242, ../../sass/components/_wobblies.scss */
+        /* line 223, ../../sass/components/_wobblies.scss */
         0% {
             opacity: 0;
         }
 
-        /* line 243, ../../sass/components/_wobblies.scss */
+        /* line 224, ../../sass/components/_wobblies.scss */
         30% {
             left: -60px;
             opacity: 0;
         }
 
-        /* line 244, ../../sass/components/_wobblies.scss */
+        /* line 225, ../../sass/components/_wobblies.scss */
         80% {
             opacity: 1;
             left: 0;
@@ -15586,42 +16064,42 @@ button.close {
     }
 
     @-webkit-keyframes tweet-in {
-        /* line 248, ../../sass/components/_wobblies.scss */
+        /* line 229, ../../sass/components/_wobblies.scss */
         0% {
             opacity: 0;
         }
 
-        /* line 249, ../../sass/components/_wobblies.scss */
+        /* line 230, ../../sass/components/_wobblies.scss */
         80% {
             opacity: 0;
             top: 167px;
         }
 
-        /* line 250, ../../sass/components/_wobblies.scss */
+        /* line 231, ../../sass/components/_wobblies.scss */
         90% {
             opacity: 1;
             top: 114px;
         }
 
-        /* line 251, ../../sass/components/_wobblies.scss */
+        /* line 232, ../../sass/components/_wobblies.scss */
         92% {
             opacity: 1;
             top: 129px;
         }
 
-        /* line 252, ../../sass/components/_wobblies.scss */
+        /* line 233, ../../sass/components/_wobblies.scss */
         92% {
             opacity: 1;
             top: 119px;
         }
 
-        /* line 253, ../../sass/components/_wobblies.scss */
+        /* line 234, ../../sass/components/_wobblies.scss */
         94% {
             opacity: 1;
             top: 127px;
         }
 
-        /* line 254, ../../sass/components/_wobblies.scss */
+        /* line 235, ../../sass/components/_wobblies.scss */
         100% {
             top: 124px;
         }
@@ -15629,13 +16107,13 @@ button.close {
 }
 @media (max-width: 320px) {
     @-webkit-keyframes heading-in {
-        /* line 261, ../../sass/components/_wobblies.scss */
+        /* line 242, ../../sass/components/_wobblies.scss */
         0% {
             opacity: 0;
             left: -60px;
         }
 
-        /* line 262, ../../sass/components/_wobblies.scss */
+        /* line 243, ../../sass/components/_wobblies.scss */
         50% {
             opacity: 1;
             left: 0px;
@@ -15643,18 +16121,18 @@ button.close {
     }
 
     @-webkit-keyframes tweet-in {
-        /* line 266, ../../sass/components/_wobblies.scss */
+        /* line 247, ../../sass/components/_wobblies.scss */
         0% {
             opacity: 0;
         }
 
-        /* line 267, ../../sass/components/_wobblies.scss */
+        /* line 248, ../../sass/components/_wobblies.scss */
         80% {
             opacity: 0;
             top: 140px;
         }
 
-        /* line 268, ../../sass/components/_wobblies.scss */
+        /* line 249, ../../sass/components/_wobblies.scss */
         100% {
             top: 104px;
         }
